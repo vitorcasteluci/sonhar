@@ -56,3 +56,18 @@ export const Adress = styled.p`
   text-align: center;
  
 `
+
+export const LogoSonhar = styled.img`
+  padding-left: 47.1%;
+  padding-right: 47.2%;
+  padding-top: 0.8%
+
+`
+
+export const Copyright = styled.p`
+  color: #F2F2F2;
+  font-size: 16px;
+  padding-left: 42.4%;
+  padding-right: 42.4%;
+  padding-top: 1.2%
+`
