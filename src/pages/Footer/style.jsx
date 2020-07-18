@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Row } from "react-bootstrap";
 export const Container = styled.div`
-  width: 100%;
-  height: 348px;
+  /* width: 100%; */
+  height: 8.06%;
   background: #7b76fc;
 `;
 
@@ -27,6 +27,12 @@ export const RowStyled = styled(Row)`
   display: flex;
   padding-left: ${(props) => `${props.padding}%`};
 `;
+
+export const RowStyledLinks = styled(Row)`
+  /* display: flex;
+  justify-content: space-between; */
+`;
+
 export const Divider = styled.div`
   background: #fff2f3;
   height: 1px;
@@ -35,12 +41,10 @@ export const Divider = styled.div`
 `;
 
 export const StyledLinks = styled(Link)`
-  text-align: left;
   color: #ffffff;
   opacity: 1;
   letter-spacing: 0px;
   font-size: 16px;
-  padding-left: 1.4%;
   padding-top: 4%;
 `;
 
@@ -67,6 +71,7 @@ export const LogoSonhar = styled.img`
 export const Copyright = styled.p`
   color: #F2F2F2;
   font-size: 16px;
+  text-align: center;
   padding-left: 42.4%;
   padding-right: 42.4%;
   padding-top: 1.2%
