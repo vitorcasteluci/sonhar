@@ -1,21 +1,24 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import { Home } from '../pages/Home'
+import About from "../Containers/About"
+import Help from "../Containers/Help"
+import Info from "../Containers/Info"
 
 export const Router = () => {
   return (
     <Switch>
       <Route exact path="/">
-        <div><Home /></div>
+        <Home />
       </Route>
       <Route exact path="/atendimento">
-        <div>Atendimento</div>
+        <About />
       </Route>
       <Route exact path="/como-ajudar">
-        <div>Como Ajudar</div>
+        <Help />
       </Route>
       <Route exact path="/fique-por-dentro">
-        <div>Fique por dentro</div>
+        <Info />
       </Route>
     </Switch>
   )
