@@ -4,13 +4,12 @@ import styled from 'styled-components';
 import { useHistory } from 'react-router-dom'
 
 const Link = ({ title, to }) => {
-
   let history = useHistory();
 
   const handleClick = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     history.push(to);
-  }
+  };
 
   return (
     <Container onClick={handleClick}>

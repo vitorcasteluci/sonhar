@@ -9,7 +9,7 @@ import Search from '../Search'
 const TopBar = () => {
   return (
     <Container>
-      <Logo/>
+      <Logo />
       <Link
         title="Principal"
         to="/"
@@ -31,11 +31,10 @@ const TopBar = () => {
         to="/fique-por-dentro"
       />
       <Search></Search>
-      <TopButton title="Denuncie"></TopButton>
+      <TopButton title="Doe"></TopButton>
     </Container>
-  )
-
-}
+  );
+};
 
 const Container = styled.div`
 width: 100%;

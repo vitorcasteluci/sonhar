@@ -7,10 +7,12 @@ const Main = ({ children }) => {
   return (
     <div>
       <TopBar/>
-      <div>
+      <div className="main-body">
         {children}
       </div>
-      <Footer/>
+      <div className="main-footer">
+        <Footer/>
+      </div>
     </div>
   )
 }
