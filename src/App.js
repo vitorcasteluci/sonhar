@@ -8,8 +8,7 @@ const App = () => {
   return (
     <Main >
       <Router />
-    </Main>
-
+    </Main>     
   );
 }
 

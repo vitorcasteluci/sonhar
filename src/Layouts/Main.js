@@ -1,6 +1,7 @@
 import React from 'react'
 import TopBar from "../components/TopBar/TopBar"
 import "./Main.css"
+import Footer from "../components/Footer"
 
 const Main = ({ children }) => {
   return (
@@ -9,9 +10,7 @@ const Main = ({ children }) => {
       <div>
         {children}
       </div>
-      <div>
-        Footer
-      </div>
+      <Footer/>
     </div>
   )
 }
