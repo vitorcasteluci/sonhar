@@ -70,18 +70,10 @@ export const Adress = styled.p`
 `;
 
 export const LogoSonhar = styled.img`
-<<<<<<< HEAD
-  /* padding-left: 47.1%;
-  padding-right: 47.2%; */
-  padding-top: 0.8%
-
-`
-=======
   padding-left: 47.1%;
   padding-right: 47.2%;
   padding-top: 0.8%;
 `;
->>>>>>> ee4353f5be55d2f4784b4e55eb96f93a520d64f5
 
 export const Copyright = styled.p`
   color: #f2f2f2;

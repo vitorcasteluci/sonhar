@@ -15,7 +15,7 @@ const TopBar = () => {
       <Link title="Como ajudar?" to="/como-ajudar" />
       <Link title="Fique por dentro" to="/fique-por-dentro" />
       <Search></Search>
-      <TopButton title="Denuncie"></TopButton>
+      <TopButton title="Doe"></TopButton>
     </Container>
   );
 };

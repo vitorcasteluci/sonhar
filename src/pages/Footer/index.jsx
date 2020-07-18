@@ -39,19 +39,19 @@ export default function Footer() {
           </Row>
           <RowStyledLinks padding={19}>
             <ColLinks xs={12} sm={2}>
-              <StyledLinks >O Instituto</StyledLinks>
+              <StyledLinks to="/sobre">O Instituto</StyledLinks>
             </ColLinks>
             <ColLinks xs={12} sm={2}>
-              <StyledLinks>Atendimento</StyledLinks>
+              <StyledLinks to="/atendimento">Atendimento</StyledLinks>
             </ColLinks>
             <ColLinks xs={12} sm={2}>
-              <StyledLinks>Estatuto</StyledLinks>
+              <StyledLinks to="">Estatuto</StyledLinks>
             </ColLinks>
             <ColLinks xs={12} sm={2}>
-              <StyledLinks>Como ajudar?</StyledLinks>
+              <StyledLinks to="/como-ajudar">Como ajudar?</StyledLinks>
             </ColLinks>
             <ColLinks xs={12} sm={2}>
-              <StyledLinks>Denuncie</StyledLinks>
+              <StyledLinks to="/doar">Doe</StyledLinks>
             </ColLinks>
           </RowStyledLinks>
         
