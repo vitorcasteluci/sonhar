@@ -23,6 +23,10 @@ export const Icon = styled(Link)`
   color: #fff2f3;
 `;
 
+export const Social = styled.a`
+  color: #fff2f3;
+`;
+
 export const RowStyled = styled(Row)`
   display: flex;
   padding-left: ${(props) => `${props.padding}%`};
@@ -45,29 +49,27 @@ export const StyledLinks = styled(Link)`
 `;
 
 export const RowAdress = styled(Row)`
-padding-left: ${(props) => `${props.padding}%`};
-padding-right: 24.4%;
-padding-top: 2.2%;
-`
+  padding-left: ${(props) => `${props.padding}%`};
+  padding-right: 24.4%;
+  padding-top: 2.2%;
+`;
 
 export const Adress = styled.p`
-  color: #FFF2F3;
+  color: #fff2f3;
   font-size: 16px;
   text-align: center;
- 
-`
+`;
 
 export const LogoSonhar = styled.img`
   padding-left: 47.1%;
   padding-right: 47.2%;
-  padding-top: 0.8%
-
-`
+  padding-top: 0.8%;
+`;
 
 export const Copyright = styled.p`
-  color: #F2F2F2;
+  color: #f2f2f2;
   font-size: 16px;
   padding-left: 42.4%;
   padding-right: 42.4%;
-  padding-top: 1.2%
-`
+  padding-top: 1.2%;
+`;
