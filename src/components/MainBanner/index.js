@@ -5,7 +5,9 @@ import styled from 'styled-components';
 const MainBanner = () => {
     return (
         <Container>
-            <img className="main-banner" src={ImageMainBanner} alt="" />
+            <Text>Nosso maior objetivo está em
+                <TextRed> acolher e resgatar </TextRed>
+                a dignidade, a autoestima e sonhos.</Text>
         </Container>
     )
 }
@@ -13,6 +15,21 @@ const MainBanner = () => {
 const Container = styled.div`
     width: 1366px;
     height: 619px;
+    background-image: url(${ImageMainBanner});
+    position: relative;
   `
+const Text = styled.div`
+    font-family: Lato;
+    width: 30%;
+    font-weight: bold;
+    top: 121px;
+    left: 139px;    
+    font-size: 27px;
+    position: absolute;
+`
+const TextRed = styled.span`
+    color: #D33B3F;
+`
+
 
 export default MainBanner;
