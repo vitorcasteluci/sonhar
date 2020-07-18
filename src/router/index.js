@@ -1,6 +1,7 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import { Home } from '../pages/Home'
+import About from "../Containers/About"
 
 export const Router = () => {
   return (
@@ -9,7 +10,7 @@ export const Router = () => {
         <div><Home /></div>
       </Route>
       <Route exact path="/atendimento">
-        <div>Atendimento</div>
+        <About />
       </Route>
       <Route exact path="/como-ajudar">
         <div>Como Ajudar</div>
