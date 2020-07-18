@@ -14,10 +14,8 @@ const Logo = () => {
 }
 
 const Container = styled.div`
-margin-right: 24px;
-margin-left: 42px;
-height: 150px;
-width: 150px;
+height: 75px;
+width: 100px;
 `
 
 export default Logo;
