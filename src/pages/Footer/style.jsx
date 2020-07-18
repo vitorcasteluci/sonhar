@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { Row } from "react-bootstrap";
-export const Container = styled.div`
-  /* width: 100%; */
+import { Row, Col } from "react-bootstrap";
+export const RodapeContainer = styled.div`
+  width: 100%; 
   height: 8.06%;
   background: #7b76fc;
 `;
@@ -28,9 +28,14 @@ export const RowStyled = styled(Row)`
   padding-left: ${(props) => `${props.padding}%`};
 `;
 
-export const RowStyledLinks = styled(Row)`
-  /* display: flex;
-  justify-content: space-between; */
+export const ColLinks = styled(Col)`
+
+
+`;
+
+export const RowStyledLinks = styled(RowStyled)`
+  justify-content: center;
+  width: 63%;
 `;
 
 export const Divider = styled.div`
@@ -62,8 +67,8 @@ export const Adress = styled.p`
 `
 
 export const LogoSonhar = styled.img`
-  padding-left: 47.1%;
-  padding-right: 47.2%;
+  /* padding-left: 47.1%;
+  padding-right: 47.2%; */
   padding-top: 0.8%
 
 `
