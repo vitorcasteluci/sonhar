@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from '../Link/Link'
 import styled from 'styled-components';
+import TopButton from '../TopButton';
 
 
 const TopBar = () => {
@@ -21,6 +22,7 @@ const TopBar = () => {
       <Link
         title="Fique por dentro"
       />
+      <TopButton></TopButton>
     </Container>
   )
 

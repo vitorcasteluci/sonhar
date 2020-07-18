@@ -13,8 +13,8 @@ const Link = (props) => {
 }
 
 const Container = styled.div`
-margin-right: 24px;
-margin-left: 24px;
+margin-right: 12px;
+margin-left: 12px;
 `
 
 export default Link;
