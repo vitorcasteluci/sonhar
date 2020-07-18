@@ -1,7 +1,7 @@
-import React from "react";
-import SearchLogo from "../../assets/glass.svg";
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import React from 'react';
+import SearchLogo from '../../assets/glass.svg';
+import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const Search = () => {
   return (
