@@ -11,7 +11,6 @@ const App = () => {
       <Router />
       <Testimonials />
     </Main>
-
   );
 }
 
