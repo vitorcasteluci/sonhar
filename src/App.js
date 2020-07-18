@@ -3,12 +3,10 @@ import { Router } from './router'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from './pages/Layouts/Main'
 
-import Search from './components/Search'
 
 const App = () => {
   return (
     <Main >
-      <Search />
       <Router />
     </Main>
 
