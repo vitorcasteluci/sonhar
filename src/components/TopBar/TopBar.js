@@ -31,7 +31,7 @@ const TopBar = () => {
         to="/fique-por-dentro"
       />
       <Search></Search>
-      <TopButton title="Denuncie"></TopButton>
+      <TopButton title="Doe"></TopButton>
     </Container>
   );
 };

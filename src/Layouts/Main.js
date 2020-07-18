@@ -1,16 +1,17 @@
 import React from 'react'
 import TopBar from "../components/TopBar/TopBar"
 import "./Main.css"
+import Footer from "../components/Footer"
 
 const Main = ({ children }) => {
   return (
     <div>
       <TopBar/>
-      <div>
+      <div className="main-body">
         {children}
       </div>
-      <div>
-        Footer
+      <div className="main-footer">
+        <Footer/>
       </div>
     </div>
   )
