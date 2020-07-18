@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { Row, Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 export const Container = styled.div`
   width: 100%;
   height: 348px;
@@ -40,6 +40,19 @@ export const StyledLinks = styled(Link)`
   opacity: 1;
   letter-spacing: 0px;
   font-size: 16px;
-  padding-left: 8%;
+  padding-left: 1.4%;
   padding-top: 4%;
 `;
+
+export const RowAdress = styled(Row)`
+padding-left: ${(props) => `${props.padding}%`};
+padding-right: 24.4%;
+padding-top: 2.2%;
+`
+
+export const Adress = styled.p`
+  color: #FFF2F3;
+  font-size: 16px;
+  text-align: center;
+ 
+`
