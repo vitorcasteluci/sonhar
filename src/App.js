@@ -8,7 +8,6 @@ const App = () => {
   return (
     <Main >
       <Router />
-      <Articles image={anxiety} title="ANSIEDADE" content="A ansiedade é uma emoção muito importante na vida do ser humano. É através dessa emoção que podemos imaginar algo que irá..."></Articles>
     </Main>
 
   );
