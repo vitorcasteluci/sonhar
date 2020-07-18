@@ -1,9 +1,9 @@
 import React from 'react';
 import './Link.css'
 import styled from 'styled-components';
-import {useHistory} from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
-const Link = ({title , to}) => {
+const Link = ({ title, to }) => {
 
   let history = useHistory();
 
@@ -16,7 +16,6 @@ const Link = ({title , to}) => {
     <Container onClick={handleClick}>
       {title}
     </Container>
-
   );
 }
 
