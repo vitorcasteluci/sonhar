@@ -1,9 +1,9 @@
 import React from "react";
 import "./TopButton.css"
 
-const TopButton = () => {
+const TopButton = (props) => {
   return (
-    <button className="TopButton">Denuncie</button>
+    <button className="TopButton">{props.title}</button>
   )
 }
 

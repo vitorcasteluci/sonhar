@@ -2,6 +2,7 @@ import React from 'react';
 import Link from '../Link/Link'
 import styled from 'styled-components';
 import TopButton from '../TopButton';
+import Seach from '../Search'
 
 
 const TopBar = () => {
@@ -22,7 +23,8 @@ const TopBar = () => {
       <Link
         title="Fique por dentro"
       />
-      <TopButton></TopButton>
+      <Seach></Seach>
+      <TopButton title="Denuncie"></TopButton>
     </Container>
   )
 
