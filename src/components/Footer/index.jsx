@@ -18,8 +18,8 @@ import {
 } from "./style";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
-import { Row, Col, Container } from "react-bootstrap";
-import SonharLogo from '../../images/2Logo-Sonhar.svg'
+import { Row, Col } from "react-bootstrap";
+import SonharLogo from "../../images/2Logo-Sonhar.svg";
 
 export default function Footer() {
   return (
@@ -59,35 +59,36 @@ export default function Footer() {
         <ContainerStyled fluid>
           <Row>
             <ColLinks xs={12} sm={2}>
-              <StyledLinks>O Instituto</StyledLinks>
+              <StyledLinks to="/sobre">O Instituto</StyledLinks>
             </ColLinks>
-            <ColLinks xs={12} sm={3}>
+            <ColLinks xs={12} sm={3} to="/atendimento">
               <StyledLinks>Atendimento</StyledLinks>
             </ColLinks>
-            <ColLinks xs={12} sm={2}>
+            <ColLinks xs={12} sm={2} to="/">
               <StyledLinks>Estatuto</StyledLinks>
             </ColLinks>
-            <ColLinks xs={12} sm={3}>
+            <ColLinks xs={12} sm={3} to="/como-ajudar">
               <StyledLinks>Como ajudar?</StyledLinks>
             </ColLinks>
-            <ColLinks xs={12} sm={2}>
+            <ColLinks xs={12} sm={2} to="/denuncie">
               <StyledLinks>Denuncie</StyledLinks>
             </ColLinks>
           </Row>
         </ContainerStyled>
         <RowAdress>
           <Col>
-            <Adress>Endereço: Rua dos Rubis, 144 sala 315 Rocha Miranda – Rio de Janeiro – RJ – Cep: 21.510-013
-                Telefone: 55 (21) 9 8773-1916/ 9 8621-5069 – CNPJ 35.807.142/0001-40</Adress>
+            <Adress>
+              Endereço: Rua dos Rubis, 144 sala 315 Rocha Miranda – Rio de
+              Janeiro – RJ – Cep: 21.510-013 Telefone: 55 (21) 9 8773-1916/ 9
+              8621-5069 – CNPJ 35.807.142/0001-40
+            </Adress>
           </Col>
         </RowAdress>
         <LogoSonhar>
           <img src={SonharLogo} />
         </LogoSonhar>
         <CopyrightContainer>
-          <Copyright>
-            Todos os direitos reservados
-          </Copyright>
+          <Copyright>Todos os direitos reservados</Copyright>
         </CopyrightContainer>
       </CentralContainer>
     </RodapeContainer>

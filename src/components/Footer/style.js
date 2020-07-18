@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { Row, Col,Container } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 export const RodapeContainer = styled.div`
-  width: 100%; 
+  width: 100%;
   height: 8.06%;
   background: #7b76fc;
 `;
@@ -62,8 +62,8 @@ export const StyledLinks = styled(Link)`
 `;
 
 export const RowAdress = styled(Row)`
-  .col{
-    margin: 3% 0; 
+  .col {
+    margin: 3% 0;
   }
 `;
 
