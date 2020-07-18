@@ -1,10 +1,14 @@
 import React from 'react';
 import { Router } from './router'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Links from './Containers/Links'
 
 const App = () => {
   return (
-    <Router />
+    <div>
+      <Links />
+      <Router />
+    </div >
   );
 }
 
