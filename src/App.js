@@ -1,14 +1,14 @@
 import React from 'react';
 import { Router } from './router'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Links from './Containers/Links'
+import Main from './pages/Layouts/Main'
 
 const App = () => {
   return (
-    <div>
-      <Links />
+    <Main >
       <Router />
-    </div >
+    </Main>
+
   );
 }
 
