@@ -1,10 +1,15 @@
 import React from 'react';
 import { Router } from './router'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from './pages/Footer'
+import Main from './Layouts/Main'
+
+
 const App = () => {
   return (
-    <Footer />
+    <Main >
+      <Router />
+    </Main>
+
   );
 }
 
