@@ -3,11 +3,12 @@ import styled from "styled-components";
 
 const ArticleButton = (props) => {
   return (
-    <Button>{props.title}</Button>
+    <Button marginTop={props.marginTop}>{props.title}</Button>
   )
 }
 
 const Button = styled.button`
+margin-top: ${props => props.marginTop};
 text-decoration: none;
 width: 107px;
 height: 38px;
