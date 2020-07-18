@@ -1,6 +1,6 @@
 import React from 'react'
 import TopBar from "../components/TopBar/TopBar"
-
+import "./Main.css"
 
 const Main = ({ children }) => {
   return (

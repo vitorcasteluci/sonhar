@@ -36,9 +36,10 @@ const TopBar = () => {
 }
 
 const Container = styled.div`
-width: 756px;
+width: 100%;
 heigth: 37px;
 display: flex;
+margin: 0;
 align-items: center;
 justify-content: center;
 `
