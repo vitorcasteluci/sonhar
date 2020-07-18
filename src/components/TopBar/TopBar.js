@@ -10,18 +10,23 @@ const TopBar = () => {
     <Container>
       <Link
         title="Principal"
+        to="/"
       />
       <Link
         title="O instituto"
+        to="/sobre"
       />
       <Link
         title="Atendimento"
+        to="/atendimento"
       />
       <Link
         title="Como ajudar?"
+        to="/como-ajudar"
       />
       <Link
         title="Fique por dentro"
+        to="/fique-por-dentro"
       />
       <Seach></Seach>
       <TopButton title="Denuncie"></TopButton>

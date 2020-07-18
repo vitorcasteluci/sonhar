@@ -1,14 +1,11 @@
 import React from 'react'
-import Links from "../../Containers/Links"
+import TopBar from "../components/TopBar/TopBar"
+
 
 const Main = ({ children }) => {
   return (
     <div>
-      <div>
-        Topbar
-        <Links />
-
-      </div>
+      <TopBar/>
       <div>
         {children}
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom'
-
+import Search from '../../components/Search/index'
 
 const Links = () => {
   return (
@@ -9,6 +9,7 @@ const Links = () => {
       <Link to="/atendimento">Atendimento</Link>
       <Link to="/fique-por-dentro">Fique por dentro</Link>
       <Link to="/como-ajudar">Como ajudar</Link>
+      <Search />
     </div>
   )
 }
