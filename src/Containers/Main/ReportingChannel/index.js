@@ -30,12 +30,11 @@ const ReportingChannel = () => {
 export default ReportingChannel;
 
 const MainContainer = styled.div`
-height: 674px;
 display: flex;
 flex-direction: column;
 align-content: center;
 align-items: center;
-margin: 40px;
+padding: 80px;
 `
 
 const Container = styled.div`
