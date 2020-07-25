@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import { Quotes } from './Quotes';
 import { Testimony } from './Testimony';
 
-import quoteOpen from '../../assets/quote-open.svg';
-import quoteClose from '../../assets/quote-close.svg';
+import quoteOpen from '../../../../assets/quote-open.svg';
+import quoteClose from '../../../../assets/quote-close.svg';
 
 export const Testimonials = (props) => {
   return (

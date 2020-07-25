@@ -1,11 +1,11 @@
 import 'primeicons/primeicons.css';
 import 'primereact/resources/themes/nova-light/theme.css';
 import 'primereact/resources/primereact.css';
-import '../../index.css';
+import './TestimonialsContainer.css';
 import React, { useState, useEffect } from 'react';
 import { Carousel } from 'primereact/carousel';
 import { responsiveOptions } from './config';
-import { Testimonials } from '../Testimonials'
+import { Testimonials } from './Testimonials'
 import { CentralContainer, CarouselTitle } from './style';
 
 const CarouselDemo = () => {
