@@ -1,5 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
 import Team from './Team';
 
 
@@ -8,15 +7,6 @@ const About = () => {
       <Team />
         
     )
-=======
-
-const About = () => {
-  return (
-    <>
-    </>
-
-  )
->>>>>>> master
 }
 
 export default About
