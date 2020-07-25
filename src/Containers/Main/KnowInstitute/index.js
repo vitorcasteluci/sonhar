@@ -26,13 +26,8 @@ export default KnowInstitute;
 const MainContainer = styled.div`
 height: 445px;
 display: flex;
-<<<<<<< HEAD
-align-items: center;
-justify-content: space-between;
-=======
 align-itens: center;
 justify-content: center;
->>>>>>> 966ca12bb114e03fc7eb1cd9292e5b035e174a41
 padding: 20px 82px;
 `
 
