@@ -1,11 +1,10 @@
 import React from "react";
-import Statistic from "./Statistic/Statistic.js"
+import Team from './Team';
+
 
 const About = () => {
     return (
-        <>
-          <Statistic/>
-        </>
+      <Team />
         
     )
 }
