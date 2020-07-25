@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Wrapper from '../../../components/Wrapper';
 import { MainTitle } from '../../../components/MainTitle';
 import { Paragraph } from '../../../components/Paragraph';
 import Button from '../../../components/Button';
@@ -8,12 +9,14 @@ import knowInstitute from '../../../assets/knowInstitute.svg';
 const KnowInstitute = () => {
   return (
     <MainContainer>
+      <Wrapper>
         <ImageContainer src={knowInstitute} />
         <Container>
           <MainTitle text="CONHEÇA O INSTUTUTO É POSSIVEL SONHAR" />
           <Paragraph text="O INSTITUTO É POSSIVÉL SONHAR é fundamentado nas diretrizes do Estatuto da Criança e do Adolescente e nos Direitos da Mulher. Nele são desenvolvidas atividades terapêuticas, psicoeducativas, de lazer e cultura para vítimas de violência (sexual, física e psíquica) em período complementar ao horário escolar." />
           <Button title="Saiba mais" />
         </Container>
+      </Wrapper>
     </MainContainer>
   )
 }
@@ -23,8 +26,13 @@ export default KnowInstitute;
 const MainContainer = styled.div`
 height: 445px;
 display: flex;
+<<<<<<< HEAD
 align-items: center;
 justify-content: space-between;
+=======
+align-itens: center;
+justify-content: center;
+>>>>>>> 966ca12bb114e03fc7eb1cd9292e5b035e174a41
 padding: 20px 82px;
 `
 
