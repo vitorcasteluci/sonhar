@@ -4,6 +4,7 @@ import Main from '../Containers/Main'
 import About from "../Containers/About"
 import Help from "../Containers/Help"
 import Info from "../Containers/Info"
+import Attendance from '../Containers/Attendance'
 
 export const Router = () => {
   return (
@@ -12,7 +13,7 @@ export const Router = () => {
         <Main />
       </Route>
       <Route exact path="/atendimento">
-        <About />
+        <Attendance />
       </Route>
       <Route exact path="/como-ajudar">
         <Help />
