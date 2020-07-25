@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components";
 import PageHeader from "../../components/PageHeader"
-import attendanceBanner from "../../assets/attendanceBanner.png"
+import attendanceBanner from "../../assets/attendanceBanner.svg"
 import numGraph from "../../assets/numGraph.svg"
 import pizzaGraph from "../../assets/pizzaGraph.svg"
 const Attendance = () => {
