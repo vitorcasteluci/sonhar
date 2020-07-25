@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from './Button'
-import { SubTitle } from './SubTitle';
-import { Paragraph } from './Paragraph'
+import Button from '../Button'
+import { SubTitle } from '../SubTitle';
+import { Paragraph } from '../Paragraph'
 
 
 const Article = (props) => {
