@@ -30,7 +30,6 @@ const Help = () => {
                     <TextBold>C/c 490953-7 Agência: 0001</TextBold>
                 </MainText>
             </Main>
-            Help
         </div>
     );
 }
