@@ -23,7 +23,7 @@ export default KnowInstitute;
 const MainContainer = styled.div`
 height: 445px;
 display: flex;
-align-itens: center;
+align-items: center;
 justify-content: space-between;
 padding: 20px 82px;
 `
