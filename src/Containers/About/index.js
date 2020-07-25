@@ -1,13 +1,18 @@
 import React from "react";
-import Statistic from "./Statistic/Statistic.js"
+import AboutInstitute from './AboutInstitute';
+import MissionValues from './MissionValues';
+import Objective from './Objective';
+import Team from './Team';
 
 const About = () => {
     return (
         <>
-          <Statistic/>
+        <AboutInstitute />
+        <MissionValues />
+        <Objective />
+        <Team />
         </>
-        
     )
 }
 
-export default About
+export default About;

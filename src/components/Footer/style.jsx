@@ -5,6 +5,7 @@ export const RodapeContainer = styled.div`
   width: 100%; 
   height: 8.06%;
   background: #7b76fc;
+  padding: 20px;
 `;
 
 export const CentralContainer = styled.div`
