@@ -1,21 +1,23 @@
-import React from 'react';
-import { Router } from './router'
-import 'bootstrap/dist/css/bootstrap.min.css';
-<<<<<<< HEAD
-import Main from './pages/Layouts/Main'
-=======
-import Main from './Layouts/Main'
-import { Testimonials } from './components/Testimonials';
+import React from "react";
+import { Router } from "./router";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Main from "./Layouts/Main";
+import TestimonialsContainer from './components/TestimonialsContainer'
+import 'primereact/resources/themes/nova-light/theme.css';
+import 'primereact/resources/primereact.min.css';
+import 'primeicons/primeicons.css';
 
->>>>>>> feature/Testimonials-quotes
+
 
 const App = () => {
   return (
-    <Main >
+    <Main>
       <Router />
-      <Testimonials />
+      <TestimonialsContainer />
     </Main>
   );
-}
+
+
+};
 
 export default App;
