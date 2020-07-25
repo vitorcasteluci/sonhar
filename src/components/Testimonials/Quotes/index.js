@@ -5,14 +5,9 @@ import styled from 'styled-components';
 export const Quotes = (props) => {
   const { src } = props
   return (
-    <Container>
-      <img src={src} alt="quote"/>
-    </Container>
+    <div>
+      <img src={src} alt="quote" />
+    </div>
   )
 }
 
-const Container = styled.div`
-width: 29px;
-height: 314px;
-position: absolute;
-`
