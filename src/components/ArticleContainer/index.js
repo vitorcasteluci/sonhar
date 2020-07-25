@@ -12,7 +12,7 @@ function ArticleContainer() {
   const [articles, setArticles] = useState([]);
 
   const requestArticle = () => {
-    const url = "https://instituto-sonhar-backend.herokuapp.com/public_contents/1";
+    const url = "https://instituto-sonhar-backend.herokuapp.com/public_contents/";
     axios.get(url).then(res => {
       setArticles(res);
     })
