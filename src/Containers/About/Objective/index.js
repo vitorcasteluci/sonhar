@@ -19,7 +19,7 @@ const Objective = () => {
 export default Objective;
 
 const MainContainer = styled.div`
-height: 940px;
+height: 400px;
 display: flex;
 align-itens: center;
 justify-content: center;
