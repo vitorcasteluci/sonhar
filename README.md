@@ -1,6 +1,6 @@
 # É possível sonhar
 
-Projeto idealizado para a ONG é possíveo sonhar.
+Projeto idealizado para a ONG é possível sonhar.
 
 Alunos: -
 

@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import { Quotes } from './Quotes';
 import { Testimony } from './Testimony';
 
-import quoteOpen from '../../assets/quote-open.svg';
-import quoteClose from '../../assets/quote-close.svg';
+import quoteOpen from '../../../../assets/quote-open.svg';
+import quoteClose from '../../../../assets/quote-close.svg';
 
 export const Testimonials = (props) => {
   return (
@@ -29,7 +29,7 @@ const MainContainer = styled.div`
 width: 100%;
 display: flex;
 flex-direction: row;
-justify-content: center
+justify-content: center;
 `
 
 const Container = styled.div`

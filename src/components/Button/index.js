@@ -1,12 +1,12 @@
 import React from "react";
 import {
-    ButtonStyled,
+  ButtonStyled,
 } from "./style";
 
 function Button(props) {
-    return (
-        <ButtonStyled variant="outline-primary">{props.text}</ButtonStyled>
-    );
+  return (
+    <ButtonStyled>{props.text}</ButtonStyled>
+  );
 }
 
 export default Button;

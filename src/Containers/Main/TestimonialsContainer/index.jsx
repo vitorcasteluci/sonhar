@@ -1,12 +1,13 @@
 import 'primeicons/primeicons.css';
 import 'primereact/resources/themes/nova-light/theme.css';
 import 'primereact/resources/primereact.css';
-import '../../index.css';
+import './TestimonialsContainer.css';
 import React, { useState, useEffect } from 'react';
 import { Carousel } from 'primereact/carousel';
 import { responsiveOptions } from './config';
-import { Testimonials } from '../Testimonials'
+import { Testimonials } from './Testimonials'
 import { CentralContainer, CarouselTitle } from './style';
+import styled from 'styled-components';
 
 const CarouselDemo = () => {
   const [testimonials, setTestimonials] = useState([]);
@@ -33,13 +34,19 @@ const CarouselDemo = () => {
       <Testimonials title={testimonials.title} text={testimonials.text} />
     );
   };
-
   const basicHeader = <CarouselTitle>DEPOIMENTOS</CarouselTitle>;
   return (
-    <CentralContainer className="carousel-demo">
-      <Carousel circular={true} value={testimonials} itemTemplate={testimonialTemplate} numVisible={1}
-        header={basicHeader} responsiveOptions={responsiveOptions}></Carousel>
-    </CentralContainer>
+    <Container>
+      <CentralContainer className="carousel-demo">
+        <Carousel circular={true} value={testimonials} itemTemplate={testimonialTemplate} numVisible={1}
+          header={basicHeader} responsiveOptions={responsiveOptions}></Carousel>
+      </CentralContainer>
+    </Container>
   );
 }
-export default CarouselDemo
+
+const Container = styled.div`
+padding: 80px 0;
+`
+
+export default CarouselDemo;
