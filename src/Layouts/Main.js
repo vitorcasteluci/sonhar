@@ -1,7 +1,7 @@
 import React from 'react'
 import TopBar from "../components/TopBar/TopBar"
 import "./Main.css"
-import Footer from '../pages/Footer/'
+import Footer from "../components/Footer"
 
 const Main = ({ children }) => {
   return (
