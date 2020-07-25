@@ -24,20 +24,20 @@ const KnowInstitute = () => {
 export default KnowInstitute;
 
 const MainContainer = styled.div`
-  height: 445px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 82px;
-`;
+height: 445px;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 20px 82px;
+`
 
 const Container = styled.div`
-  height: 100%;
-  width: 436px;
-  margin: 10px 20px;
+height: 100%;
+width: 436px;
+margin: 10px 20px;
 `;
 
 const ImageContainer = styled.img`
-  width: 425px;
-  height: 395px;
+width: 425px;
+height: 395px;
 `;
