@@ -18,12 +18,18 @@ export const CardTitle = styled(Card.Title)`
   color: #7b77fc;
   font-weight: 600;
   font-size: 16px;
+
 `;
 
 export const CardText = styled(Card.Text)`
   margin-bottom: 40px;
   line-height: 24px;
   opacity: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  
 `;
 
 
