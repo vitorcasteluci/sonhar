@@ -8,6 +8,8 @@ import {
   ButtonContainer,
   ButtonStyled,
 } from "./style";
+import Button from "../Button"
+
 function ArticleCard(props) {
   return (
     <CardSize>
@@ -15,9 +17,7 @@ function ArticleCard(props) {
       <Card.Body>
         <CardTitle>{props.title}</CardTitle>
         <CardText>{props.content}</CardText>
-        <ButtonContainer>
-          <ButtonStyled variant="outline-primary">Veja Mais</ButtonStyled>
-        </ButtonContainer>
+        <Button position="flex-end" />
       </Card.Body>
     </CardSize>
   );

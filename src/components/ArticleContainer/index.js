@@ -1,35 +1,24 @@
 import React, { useState } from "react";
 import Collapse from "react-bootstrap/Collapse";
-import Button from "react-bootstrap/Button";
+import Button from "../Button";
 import ArticleCard from "../ArticleCard";
 import anxiety from "../../assets/anxiety.png";
 import { Container, Row, Col } from "react-bootstrap";
-import { ButtonStyled, ButtonContainer } from "./style";
+import SimpleContainer from "../SimpleContainer";
+import axios from "axios";
 
 function ArticleContainer() {
   const [open, setOpen] = useState(false);
-  const [articles, setArticles] = useState([
-    {
-      title: "ANSIEDADE",
-      content:
-        "A ansiedade é uma emoção muito importante na vida do ser humano. É através dessa emoção que podemos imaginar algo que irá...",
-    },
-    {
-      title: "ANSIEDADE",
-      content:
-        "A ansiedade é uma emoção muito importante na vida do ser humano. É através dessa emoção que podemos imaginar algo que irá...",
-    },
-    {
-      title: "ANSIEDADE",
-      content:
-        "A ansiedade é uma emoção muito importante na vida do ser humano. É através dessa emoção que podemos imaginar algo que irá...",
-    },
-    {
-      title: "ANSIEDADE",
-      content:
-        "A ansiedade é uma emoção muito importante na vida do ser humano. É através dessa emoção que podemos imaginar algo que irá...",
-    },
-  ]);
+  const [articles, setArticles] = useState([]);
+
+  const requestArticle = () => {
+    const url = "https://instituto-sonhar-backend.herokuapp.com/public_contents/1";
+    axios.get(url).then(res => {
+      setArticles(res);
+    })
+  }
+
+  requestArticle();
 
   return (
     <>
@@ -53,16 +42,15 @@ function ArticleContainer() {
           </Container>
         </div>
       </Collapse>
-      <ButtonContainer>
-        <ButtonStyled
+      <SimpleContainer position="center">
+        <Button
           onClick={() => setOpen(!open)}
           aria-controls="example-collapse-text"
           aria-expanded={open}
           variant="outline-primary"
-        >
-          Veja mais
-        </ButtonStyled>
-      </ButtonContainer>
+          text="Veja mais"
+        />
+      </SimpleContainer>
     </>
   );
 }
