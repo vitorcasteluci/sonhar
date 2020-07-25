@@ -12,6 +12,9 @@ export const Router = () => {
       <Route exact path="/">
         <Main />
       </Route>
+      <Route exact path="/sobre">
+        <About />
+      </Route>
       <Route exact path="/atendimento">
         <Attendance />
       </Route>

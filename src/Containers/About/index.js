@@ -1,10 +1,9 @@
 import React from "react";
+import AboutInstitute from './AboutInstitute';
 
 const About = () => {
     return (
-        <div>
-            Sobre!
-        </div>
+        <AboutInstitute />
     )
 }
 
