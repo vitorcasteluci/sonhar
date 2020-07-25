@@ -2,6 +2,7 @@
   "name": "sonhar",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kenzie-academy-brasil.github.io/sonhar/",
   "dependencies": {
     "bootstrap": "3",
     "cra-template": "1.0.3",
