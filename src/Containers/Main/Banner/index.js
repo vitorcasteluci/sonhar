@@ -19,6 +19,7 @@ const Container = styled.div`
     height: 619px;
     background-image: url(${ImageMainBanner});
     position: relative;
+    margin: auto;
   `
 const Text = styled.div`
     font-family: Lato;
