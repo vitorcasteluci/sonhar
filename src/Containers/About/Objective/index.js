@@ -56,4 +56,5 @@ display: flex;
 flex-direction: column;
 max-width: 1156px;
 align-items: center;
+padding: 60px;
 `

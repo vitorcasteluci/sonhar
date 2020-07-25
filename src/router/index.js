@@ -24,6 +24,9 @@ export const Router = () => {
       <Route exact path="/fique-por-dentro">
         <Info />
       </Route>
+      <Route exact path="/Sobre">
+        <About/>
+      </Route>
     </Switch>
   )
 }
