@@ -108,11 +108,12 @@ opacity: 1;
 margin-bottom: 75px;
 `
 const TextContainer = styled.div`
-width: 930px;
+width: 100%;
 margin: 0 auto;
 display: flex;
 flex-direction: row;
-flex-wrap: nowrap;
+flex-wrap: wrap;
+justify-content: center;
 `
 
 
@@ -136,11 +137,12 @@ opacity: 1;
 `
 
 const ContainerDirection = styled.div`
-width: 540px;
+flex: 1 1 540px;
+padding-left: 10vw;
 `
 
 const ContainerExperts = styled.div`
-width: 390px;
+flex: 1 1 420px;
 `
 const Title = styled.p`
 margin-bottom:32px;
