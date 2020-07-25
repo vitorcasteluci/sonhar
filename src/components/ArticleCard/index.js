@@ -17,7 +17,7 @@ function ArticleCard(props) {
       <Card.Body>
         <CardTitle>{props.title}</CardTitle>
         <CardText>{props.content}</CardText>
-        <Button position="flex-end" />
+        <Button text={'Saiba mais'} position="flex-end" />
       </Card.Body>
     </CardSize>
   );

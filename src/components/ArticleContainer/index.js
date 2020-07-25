@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import Collapse from "react-bootstrap/Collapse";
-import Button from "../Button";
 import ArticleCard from "../ArticleCard";
-import anxiety from "../../assets/anxiety.png";
 import { Container, Row, Col } from "react-bootstrap";
 import SimpleContainer from "../SimpleContainer";
 import axios from "axios";
+import { ButtonStyled, ArticleContainerDiv } from './style'
 
 function ArticleContainer() {
   const [open, setOpen] = useState(false);
@@ -14,25 +13,31 @@ function ArticleContainer() {
   const requestArticle = () => {
     const url = "https://instituto-sonhar-backend.herokuapp.com/public_contents/";
     axios.get(url).then(res => {
-      setArticles(res);
+      setArticles(res.data);
     })
+
   }
 
-  requestArticle();
+  const handleClick = () => {
+    requestArticle()
+    console.log(articles)
+    setOpen(!open)
+  }
+
 
   return (
     <>
       <Collapse in={open}>
-        <div>
+        <ArticleContainerDiv>
           <Container>
             <Row>
               {articles.map((article, key) => {
                 return (
                   <Col sm={3}>
                     <ArticleCard
-                      image={anxiety}
+                      image={article.image_url}
                       title={article.title}
-                      content={article.content}
+                      content={article.body}
                       key={key}
                     ></ArticleCard>
                   </Col>
@@ -40,19 +45,19 @@ function ArticleContainer() {
               })}
             </Row>
           </Container>
-        </div>
+        </ArticleContainerDiv>
       </Collapse>
       <SimpleContainer position="center">
-        <Button
-          onClick={() => setOpen(!open)}
+        <ButtonStyled
+          onClick={handleClick}
           aria-controls="example-collapse-text"
           aria-expanded={open}
-          variant="outline-primary"
           text="Veja mais"
-        />
+        > Veja mais</ButtonStyled>
       </SimpleContainer>
     </>
   );
 }
+
 
 export default ArticleContainer;

@@ -5,7 +5,7 @@ import {
 
 function Button(props) {
   return (
-    <ButtonStyled variant="outline-primary">{props.text}</ButtonStyled>
+    <ButtonStyled>{props.text}</ButtonStyled>
   );
 }
 
