@@ -12,7 +12,7 @@ margin-top: ${props => props.marginTop};
 text-decoration: none;
 width: 107px;
 height: 38px;
-background: #FFFFFF;
+background: transparent;
 color: #7B77FC;
 border: 1px solid #7B77FC;
 border-radius: 10px;

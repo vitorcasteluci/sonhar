@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-import { Home } from '../pages/Home'
+import Main from '../Containers/Main'
 import About from "../Containers/About"
 import Help from "../Containers/Help"
 import Info from "../Containers/Info"
@@ -9,7 +9,7 @@ export const Router = () => {
   return (
     <Switch>
       <Route exact path="/">
-        <Home />
+        <Main />
       </Route>
       <Route exact path="/atendimento">
         <About />
