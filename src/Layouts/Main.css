@@ -5,8 +5,9 @@
   bottom: 0;
 }
 
-.main-body { /*alterar*/
+.main-body { 
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding-bottom: 40px;
 }
