@@ -13,7 +13,7 @@ const AttendanceData = () => {
         <Container>
           <MainTitle text="DADOS SOBRE O ATENDIMENTO" />
           <Paragraph text="Estamos atuando há 2 (dois) anos, mas só em novembro de 2019 conseguimos legalizar o instituto. Atendemos cerca de 203 (duzentos e três) crianças e mulheres em curso, todas de baixa renda, sendo 168 pessoas em fila de espera." />
-          <Button title="Saiba mais" />
+          <Button title="Saiba mais" text={'Saiba mais'} />
         </Container>
         <ImageContainer src={attendanceImg} />
       </Wrapper>
