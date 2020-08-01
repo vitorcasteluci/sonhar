@@ -28,9 +28,10 @@ display: flex;
 flex-wrap: wrap;
 align-items: center;
 justify-content: center;
-padding: 20px;
+padding: 24px;
 max-width: 1356px;
 width: 100%;
+margin-bottom: 48px;
 `
 
 const Container = styled.div`
@@ -41,5 +42,4 @@ height: 100%;
 const ImageContainer = styled.div`
 flex: 1 1 425px;
 width: 435px;
-height: 395px;
 `;

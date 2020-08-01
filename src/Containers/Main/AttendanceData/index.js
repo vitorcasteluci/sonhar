@@ -29,8 +29,9 @@ const MainContainer = styled.div`
   max-width: 1356px;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 24px;
   background: #f0effc 0% 0% no-repeat padding-box;
+  margin-bottom: 48px;
 `;
 
 const ImageContainer = styled.div`
@@ -41,5 +42,4 @@ const ImageContainer = styled.div`
 const Container = styled.div`
   flex: 1 1 435px;
   min-height: 314px;
-  margin: 10px 20px;
 `;
