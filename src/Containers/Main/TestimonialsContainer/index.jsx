@@ -47,6 +47,8 @@ const CarouselDemo = () => {
 
 const Container = styled.div`
 padding: 80px 0;
+width: 100%;
+max-width: 1356px;
 `
 
 export default CarouselDemo;

@@ -26,6 +26,7 @@ const MainContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  max-width: 1356px;
   align-items: center;
   justify-content: center;
   padding: 20px;

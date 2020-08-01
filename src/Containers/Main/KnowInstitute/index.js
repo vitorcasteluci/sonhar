@@ -26,16 +26,16 @@ export default KnowInstitute;
 const MainContainer = styled.div`
 display: flex;
 flex-wrap: wrap;
-width: 100%;
 align-items: center;
 justify-content: center;
 padding: 20px;
+max-width: 1356px;
+width: 100%;
 `
 
 const Container = styled.div`
 flex: 1 1 435px;
 height: 100%;
-margin: 10px 20px;
 `;
 
 const ImageContainer = styled.div`

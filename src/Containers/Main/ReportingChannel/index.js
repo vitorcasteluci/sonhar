@@ -40,7 +40,9 @@ const MainContainer = styled.div`
 display: flex;
 flex-wrap: wrap;
 align-content: center;
-justify-content: center;;
+justify-content: center;
+width: 100%;
+max-width: 1356px;
 padding: 20px;
 `
 
