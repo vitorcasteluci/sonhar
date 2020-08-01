@@ -1,13 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import TrevoLogo from "../../../assets/partners-trevo.png";
 
 const Partners = () => {
   return (
     <MainContainer>
-      <Wrapper>
-        <Title>OBJETIVO</Title>
-        <Container></Container>
-      </Wrapper>
+      <Title>PARCEIROS</Title>
+      <Container>
+        <PartnerLogo src={TrevoLogo} />
+      </Container>
     </MainContainer>
   );
 };
@@ -15,15 +16,16 @@ const Partners = () => {
 export default Partners;
 
 const MainContainer = styled.div`
-  height: 940px;
+  height: fit-content;
   display: flex;
-  align-itens: center;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  padding: 20px 82px;
+  width: 100%;
 `;
 
 const Title = styled.h1`
-  height: 44px;
+  padding: 40px;
   font-family: Lato;
   font-weight: bold;
   font-size: 36px;
@@ -34,23 +36,12 @@ const Title = styled.h1`
 
 const Container = styled.div`
   max-width: 744px;
-  padding: 40px;
-`;
-
-const Text = styled.p`
-  font-family: Lato;
-  font-size: 16px;
-  font-weight: regular;
-  letter-spacing: 0px;
-  color: #332e2e;
-  opacity: 1;
-`;
-
-const Wrapper = styled.div`
-  width: 100%;
   display: flex;
-  flex-direction: column;
-  max-width: 1156px;
-  align-items: center;
-  padding: 60px;
+  flex-direction: row;
+  flex-wrap: wrap;
+`;
+
+const PartnerLogo = styled.img`
+  width: 196px;
+  height: 147px;
 `;
