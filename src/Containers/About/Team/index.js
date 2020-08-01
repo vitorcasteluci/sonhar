@@ -105,7 +105,7 @@ font: Bold 36px/54px Lato;
 letter-spacing: 1.8px;
 color: #7B77FC;
 opacity: 1;
-margin-bottom: 75px;
+margin-bottom: 40px;
 `
 const TextContainer = styled.div`
 width: 100%;
@@ -139,10 +139,12 @@ opacity: 1;
 const ContainerDirection = styled.div`
 flex: 1 1 540px;
 padding-left: 10vw;
+/* margin-left:40px; */
 `
 
 const ContainerExperts = styled.div`
 flex: 1 1 420px;
+margin-left:40px;
 `
 const Title = styled.p`
 margin-bottom:32px;
