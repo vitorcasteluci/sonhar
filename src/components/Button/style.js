@@ -10,6 +10,7 @@ export const ButtonStyled = styled(Link)`
   height: 38px;
   border-radius: 10px;
   outline: none;
+  text-align:center;
   &:hover {
     background: #7b77fc;
     color: #ffffff;

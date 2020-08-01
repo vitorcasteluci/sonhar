@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { MainTitle } from '../../components/MainTitle';
 import { Paragraph } from '../../components/Paragraph';
 import { SubTitle } from '../../components/SubTitle';
+import Button from '../../components/Button';
 
 class Publications extends React.Component {
 
@@ -12,14 +13,15 @@ class Publications extends React.Component {
     title: "",
     body: "",
     publishedAt: "",
-    authorName: ""
+    authorName: "",
+    nextId: "",
+    previewsId: ""
   }
 
   apiRequest = () => {
 
-    const publishId = this.props.match.params.id
-
-    const url = `https://instituto-sonhar-backend.herokuapp.com/public_contents/${1}`;
+    const { id } = this.props.match.params
+    const url = `https://instituto-sonhar-backend.herokuapp.com/public_contents/${id}`;
 
     fetch(url, {
         method: "GET",
@@ -35,7 +37,9 @@ class Publications extends React.Component {
             body: data.content.body, 
             imageUrl: data.content.image_url, 
             publishedAt: data.content.published_at, 
-            authorName: data.content.author_name 
+            authorName: data.content.author_name,
+            nextId: data.next_id,
+            previewsId: data.previews_id
           })
         )
   }
@@ -45,24 +49,34 @@ class Publications extends React.Component {
   }
 
   render() {
-    console.log(this.props.match)
+    console.log(this.props.match.params)
     return (
       <MainContainer>
-        <ContainerTitle>
+        <Center>
           <MainTitle text={this.state.title} />
-        </ContainerTitle>
-        <CointainerImg>
+        </Center>
+        <Center>
           <img src={this.state.imageUrl} alt={this.state.title} />
-        </CointainerImg>
-        <CointainerParagraph>
-          <Paragraph text={this.state.body} />
-        </CointainerParagraph>
-        <CointainerSubTitle>
-          <SubTitle text={this.state.publishedAt} />
-        </CointainerSubTitle>
-        <CointainerText>
-          <Text>{this.state.authorName}kkk</Text>
-        </CointainerText>
+        </Center>
+        <Center>
+          <Text>{this.state.body}</Text>
+        </Center>
+        <Center>
+          Publicado dia <SubTitle text={this.state.publishedAt} />
+        </Center>
+        <Center>
+          <Text>{this.state.authorName}</Text>
+        </Center>
+        <Center>
+          {
+          this.state.previewsId &&
+          <StyledButton text="< Anterior" to={`/publicacoes/${this.state.previewsId}`} />
+          }
+          {
+          this.state.nextId &&
+          <StyledButton text="Próximo >" to={`/publicacoes/${this.state.nextId}`} />
+          }
+        </Center>
       </MainContainer>
     )
   }
@@ -71,29 +85,28 @@ class Publications extends React.Component {
 export default withRouter(Publications);
 
 const MainContainer = styled.div`
+display: flex;
+align-itens: center;
+justify-content: center;
+flex-direction: column;
+`
 
+const Center = styled.div`
+display: flex;
+justify-content: center;
 `
 
 const Text = styled.p`
-
+font-family: Lato;
+font-size: 16px;
+font-weight: regular;
+letter-spacing: 0px;
+color: #332E2E;
+opacity: 1;
+white-space: pre-line;
 `
 
-const ContainerTitle = styled.div`
-
-`
-
-const CointainerImg = styled.div`
-
-`
-
-const CointainerParagraph = styled.div`
-
-`
-
-const CointainerSubTitle = styled.div`
-
-`
-
-const CointainerText = styled.div`
-
+const StyledButton = styled(Button)`
+padding: 20px 60px;
+border: red !important;
 `
