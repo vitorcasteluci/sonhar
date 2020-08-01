@@ -1,11 +1,11 @@
-import React from 'react'
-import { Route, Switch } from 'react-router-dom'
-import Main from '../Containers/Main'
-import About from "../Containers/About"
-import Help from "../Containers/Help"
-import Info from "../Containers/Info"
-import Attendance from '../Containers/Attendance'
-import Publications from '../Containers/Publications'
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+import Main from "../Containers/Main";
+import About from "../Containers/About";
+import Help from "../Containers/Help";
+import Info from "../Containers/Info";
+import Attendance from "../Containers/Attendance";
+import Publications from "../Containers/Publications";
 
 export const Router = () => {
   return (
@@ -29,8 +29,8 @@ export const Router = () => {
         <Publications />
       </Route>
       <Route exact path="/Sobre">
-        <About/>
+        <About />
       </Route>
     </Switch>
-  )
-}
+  );
+};
