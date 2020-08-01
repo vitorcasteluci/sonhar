@@ -26,8 +26,8 @@ const ReportingChannel = () => {
       <div>
         <RightContainer>
           <TopButton title="Denuncie" />
-          <ImageContainer src={reportIt} >
-          </ImageContainer>
+          <img alt="denuncie" style={{ maxWidth: "100%" }} src={reportIt} >
+          </img>
         </RightContainer>
       </div>
     </MainContainer>
@@ -57,12 +57,6 @@ display: flex;
 align-items: center;
 flex-direction: column;
 margin: 40px;
-`
-
-const ImageContainer = styled.img`
-width: 280px;
-height: 160px;
-margin: 60px 120px;
 `
 
 const ContainerText = styled.div`

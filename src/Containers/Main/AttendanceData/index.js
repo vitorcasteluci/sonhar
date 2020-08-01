@@ -13,7 +13,9 @@ const AttendanceData = () => {
         <Paragraph text="Estamos atuando há 2 (dois) anos, mas só em novembro de 2019 conseguimos legalizar o instituto. Atendemos cerca de 203 (duzentos e três) crianças e mulheres em curso, todas de baixa renda, sendo 168 pessoas em fila de espera." />
         <Button to="/atendimento" title="Saiba mais" text={"Saiba mais"} />
       </Container>
-      <ImageContainer src={attendanceImg} />
+      <ImageContainer>
+        <img style={{ maxWidth: "100%" }} alt="atendimento" src={attendanceImg} />
+      </ImageContainer>
     </MainContainer>
   );
 };
@@ -26,17 +28,17 @@ const MainContainer = styled.div`
   width: 100%;
   align-items: center;
   justify-content: center;
-  padding: 20px 82px;
+  padding: 20px;
   background: #f0effc 0% 0% no-repeat padding-box;
 `;
 
-const ImageContainer = styled.img`
-  flex: 1 1 435;
+const ImageContainer = styled.div`
+  flex: 1 1 435px;
   min-height: 314px;
 `;
 
 const Container = styled.div`
-  flex: 1 1 435;
+  flex: 1 1 435px;
   min-height: 314px;
   margin: 10px 20px;
 `;

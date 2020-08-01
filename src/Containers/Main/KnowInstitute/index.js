@@ -8,7 +8,9 @@ import knowInstitute from "../../../assets/knowInstitute.svg";
 const KnowInstitute = () => {
   return (
     <MainContainer>
-      <ImageContainer src={knowInstitute} />
+      <ImageContainer>
+        <img style={{ maxWidth: "100%" }} alt="conheça o instituo" src={knowInstitute} />
+      </ImageContainer>
       <Container>
         <MainTitle text="CONHEÇA O INSTUTUTO É POSSIVEL SONHAR" />
         <Paragraph text="O INSTITUTO É POSSIVÉL SONHAR é fundamentado nas diretrizes do Estatuto da Criança e do Adolescente e nos Direitos da Mulher. Nele são desenvolvidas atividades terapêuticas, psicoeducativas, de lazer e cultura para vítimas de violência (sexual, física e psíquica) em período complementar ao horário escolar." />
@@ -27,7 +29,7 @@ flex-wrap: wrap;
 width: 100%;
 align-items: center;
 justify-content: center;
-padding: 20px 82px;
+padding: 20px;
 `
 
 const Container = styled.div`
@@ -36,7 +38,7 @@ height: 100%;
 margin: 10px 20px;
 `;
 
-const ImageContainer = styled.img`
+const ImageContainer = styled.div`
 flex: 1 1 425px;
 width: 435px;
 height: 395px;
