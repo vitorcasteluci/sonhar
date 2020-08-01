@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { Link } from "react-router-dom";
 import {Row} from "react-bootstrap" ;
 
@@ -9,7 +10,6 @@ display:flex;
 flex-flow:column;
 justify-content:center;
 `;
-
 
 export const ArticleContainerDiv = styled.div`
   margin-top: 30px;
