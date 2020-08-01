@@ -53,7 +53,7 @@ class Publications extends React.Component {
     return (
       <MainContainer>
         <Center>
-          <MainTitle text={this.state.title} />
+          <Title>{this.state.title}</Title>
         </Center>
         <Center>
           <img src={this.state.imageUrl} alt={this.state.title} />
@@ -65,7 +65,7 @@ class Publications extends React.Component {
           Publicado dia <SubTitle text={this.state.publishedAt} />
         </Center>
         <Center>
-          <Text>{this.state.authorName}</Text>
+          <Text>Escrito por: {this.state.authorName}</Text>
         </Center>
         <Center>
           {
@@ -86,7 +86,6 @@ export default withRouter(Publications);
 
 const MainContainer = styled.div`
 display: flex;
-align-itens: center;
 justify-content: center;
 flex-direction: column;
 `
@@ -94,6 +93,16 @@ flex-direction: column;
 const Center = styled.div`
 display: flex;
 justify-content: center;
+`
+
+const Title = styled.h1`
+font-family: Lato;
+font-size: 36px;
+font-weight: bold;
+letter-spacing: 1.8px;
+color: #7B77FC;
+opacity: 1;
+margin-bottom: 40px;
 `
 
 const Text = styled.p`
@@ -104,6 +113,8 @@ letter-spacing: 0px;
 color: #332E2E;
 opacity: 1;
 white-space: pre-line;
+max-width: 1000px;
+padding: 40px;
 `
 
 const StyledButton = styled(Button)`
