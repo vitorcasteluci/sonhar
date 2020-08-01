@@ -103,6 +103,7 @@ letter-spacing: 1.8px;
 color: #7B77FC;
 opacity: 1;
 margin-bottom: 40px;
+text-transform: uppercase;
 `
 
 const Text = styled.p`
