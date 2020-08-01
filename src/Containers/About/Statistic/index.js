@@ -54,6 +54,7 @@ flex-flow:wrap;
 const Statistics = styled.div`
 background-color:${(props) => props.color};
 display:flex;
+flex-flow: wrap;
 justify-content:space-between;
 align-items:center;
 width:50%;
