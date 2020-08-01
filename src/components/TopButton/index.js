@@ -34,4 +34,7 @@ border: 0;
 border-radius: 40px;
 width: 112px;
 height: 36px;
+&:hover {
+  background: #ff0040;
+}
 `
