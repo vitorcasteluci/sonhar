@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Collapse from "react-bootstrap/Collapse";
 import ArticleCard from "../ArticleCard";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Col } from "react-bootstrap";
 import SimpleContainer from "../SimpleContainer";
 import axios from "axios";
-import { ArticleContainerDiv, Title } from "./style";
+import { PublicationsContainer ,ArticleContainerDiv, Title , StyledRow} from "./style";
 import ButtonStyled from "../Button";
 
 const url = "https://instituto-sonhar-backend.herokuapp.com/public_contents/";
@@ -24,12 +24,12 @@ const ArticleContainer = ({ limit }) => {
   }, [limit]);
 
   return (
-    <>
+    <PublicationsContainer>
       <Title>ÚLTIMAS PUBLICAÇÕES</Title>
       <Collapse in={open}>
         <ArticleContainerDiv>
           <Container>
-            <Row>
+            <StyledRow>
               {articles.map((article, key) => {
                 return (
                   <Col sm={3}>
@@ -43,7 +43,7 @@ const ArticleContainer = ({ limit }) => {
                   </Col>
                 );
               })}
-            </Row>
+            </StyledRow>
           </Container>
         </ArticleContainerDiv>
       </Collapse>
@@ -52,7 +52,7 @@ const ArticleContainer = ({ limit }) => {
           Veja mais
         </ButtonStyled>
       </SimpleContainer>
-    </>
+    </PublicationsContainer>
   );
 };
 

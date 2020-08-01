@@ -14,7 +14,9 @@ const KnowInstitute = () => {
       <Container>
         <MainTitle text="CONHEÇA O INSTUTUTO É POSSIVEL SONHAR" />
         <Paragraph text="O INSTITUTO É POSSIVÉL SONHAR é fundamentado nas diretrizes do Estatuto da Criança e do Adolescente e nos Direitos da Mulher. Nele são desenvolvidas atividades terapêuticas, psicoeducativas, de lazer e cultura para vítimas de violência (sexual, física e psíquica) em período complementar ao horário escolar." />
-        <Button to="/sobre" title="Saiba mais" text={"Saiba mais"} />
+        <ButtonBox>
+          <Button  to="/sobre" title="Saiba mais" text={"Saiba mais"} />
+        </ButtonBox>
       </Container>
     </MainContainer>
   );
@@ -42,4 +44,10 @@ height: 100%;
 const ImageContainer = styled.div`
 flex: 1 1 425px;
 width: 435px;
+`;
+
+
+const ButtonBox = styled.div`
+width:100%;
+margin-top:30px;
 `;
