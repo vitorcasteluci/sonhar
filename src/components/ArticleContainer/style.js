@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import {Row} from "react-bootstrap" 
+import {Row} from "react-bootstrap" ;
 
 export const PublicationsContainer = styled.div`
 width: 100%;
@@ -25,7 +25,6 @@ export const Title = styled.h1`
 
 
 export const StyledRow = styled(Row)`
-
 display:flex;
 justify-content:center;
 `
