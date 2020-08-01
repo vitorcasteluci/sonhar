@@ -1,34 +1,41 @@
 import React from 'react';
-import Link from '../Link/Link'
 import styled from 'styled-components';
 import TopButton from '../TopButton';
 import Logo from "../Logo"
-import Search from '../Search'
-
+import Search from '../Search';
+import { Link, useLocation } from 'react-router-dom';
 
 const TopBar = () => {
+  const { pathname } = useLocation();
+  const currentPath = pathname.substring(1);
+
   return (
     <Container>
       <Logo />
-      <Link
-        title="Principal"
+      <LinkStyled
+        children="Principal"
         to="/"
+        className={(currentPath === "" && "active")}
       />
-      <Link
-        title="O instituto"
+      <LinkStyled
+        children="O instituto"
         to="/sobre"
+        className={(currentPath === "sobre" && "active")}
       />
-      <Link
-        title="Atendimento"
+      <LinkStyled
+        children="Atendimento"
         to="/atendimento"
+        className={(currentPath === "atendimento" && "active")}
       />
-      <Link
-        title="Como ajudar?"
+      <LinkStyled
+        children="Como ajudar?"
         to="/como-ajudar"
+        className={(currentPath === "como-ajudar" && "active")}
       />
-      <Link
-        title="Fique por dentro"
+      <LinkStyled
+        children="Fique por dentro"
         to="/fique-por-dentro"
+        className={(currentPath === "fique-por-dentro" && "active")}
       />
       <Search></Search>
       <TopButton title="Doe" to="/como-ajudar"></TopButton>
@@ -44,6 +51,22 @@ margin: 0;
 align-items: center;
 justify-content: center;
 overflow-x: overlay;
+`
+
+const LinkStyled = styled(Link)`
+text-decoration: none !important;
+color: #000000;
+margin-right: 12px;
+margin-left: 12px;
+font-size: 16px;
+font-family: Lato, Regular;
+vertical-align: middle;
+&:hover {
+  color: #ff0040;
+}
+&.active {
+  color: #ff0040;
+}
 `
 
 export default TopBar;
