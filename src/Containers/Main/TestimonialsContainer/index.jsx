@@ -34,12 +34,12 @@ const CarouselDemo = () => {
       <Testimonials title={testimonials.title} text={testimonials.text} />
     );
   };
-  const basicHeader = <CarouselTitle>DEPOIMENTOS</CarouselTitle>;
   return (
     <Container>
+      <CarouselTitle>DEPOIMENTOS</CarouselTitle>
       <CentralContainer className="carousel-demo">
         <Carousel circular={true} value={testimonials} itemTemplate={testimonialTemplate} numVisible={1}
-          header={basicHeader} responsiveOptions={responsiveOptions}></Carousel>
+          responsiveOptions={responsiveOptions}></Carousel>
       </CentralContainer>
     </Container>
   );
@@ -47,6 +47,8 @@ const CarouselDemo = () => {
 
 const Container = styled.div`
 padding: 80px 0;
+width: 100%;
+max-width: 1356px;
 `
 
 export default CarouselDemo;
