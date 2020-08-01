@@ -9,7 +9,7 @@ const PageHeader = ({ children, src }) => {
                     {children}
                 </Title>
                 <Picture>
-                    <img src={src} alt="helpBanner"></img>
+                    <img style={{ maxWidth: "100%" }} src={src} alt="helpBanner"></img>
                 </Picture>
             </Wrapper>
         </Header>
@@ -18,12 +18,9 @@ const PageHeader = ({ children, src }) => {
 
 const Header = styled.div`
 width: 100%;
-height : 459.25px;
 background-color: #F0EFFC;
 display: flex;
 justify-content: center;
-padding: 22px 83px;
-
 `
 const Wrapper = styled.div`
 width:100%;
@@ -48,6 +45,7 @@ display: block;
 font-family: Lato;
 font-style: medium;
 margin-bottom: 126px;
+padding: 12px;
 `
 
 export default PageHeader;
