@@ -28,8 +28,14 @@ export const CardText = styled(Card.Text)`
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-
-  
 `;
 
+export const CardBody = styled(Card.Body)`
 
+ background-color:black;
+`;
+
+export const ButtonContainer = styled.div`
+display:flex;
+justify-content:flex-end;
+`

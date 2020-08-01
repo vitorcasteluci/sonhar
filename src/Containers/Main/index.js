@@ -12,9 +12,9 @@ const Main = () => {
       <MainBanner />
       <KnowInstitute />
       <AttendanceData />
-      <ArticleContainer />
       <TestimonialsContainer />
       <ReportingChannel />
+      <ArticleContainer />
     </>
   )
 }
