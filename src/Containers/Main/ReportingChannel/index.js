@@ -34,7 +34,7 @@ const ReportingChannel = () => {
 
       </MainContainer>
 
-      <TopButton title="Denuncie" />
+      <TopButton title="Denuncie" href="http://www.humanizaredes.gov.br/ouvidoria-online/" />
     </>
   )
 }
