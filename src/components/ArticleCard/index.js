@@ -6,18 +6,23 @@ import {
   CardTitle,
   CardText,
   ButtonContainer,
-  ButtonStyled,
 } from "./style";
-import Button from "../Button"
+import Button from "../Button";
 
-function ArticleCard(props) {
+function ArticleCard({ image, title, content, id }) {
   return (
     <CardSize>
-      <CardImg variant="top" src={props.image} />
+      <CardImg variant="top" src={image} />
       <Card.Body>
-        <CardTitle>{props.title}</CardTitle>
-        <CardText>{props.content}</CardText>
-        <Button text={'Saiba mais'} position="flex-end" />
+        <CardTitle>{title}</CardTitle>
+        <CardText>{content}</CardText>
+        <ButtonContainer>
+          <Button
+            text={"Saiba mais"}
+            position="flex-end"
+            to={`/publicacoes/${id}`}
+          />
+        </ButtonContainer>
       </Card.Body>
     </CardSize>
   );
