@@ -1,36 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Collapse from "react-bootstrap/Collapse";
 import ArticleCard from "../ArticleCard";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Col } from "react-bootstrap";
 import SimpleContainer from "../SimpleContainer";
 import axios from "axios";
-import { ButtonStyled, ArticleContainerDiv } from './style'
+import { PublicationsContainer ,ArticleContainerDiv, Title , StyledRow} from "./style";
+import ButtonStyled from "../Button";
 
-function ArticleContainer() {
+const url = "https://instituto-sonhar-backend.herokuapp.com/public_contents/";
+const fetchContent = () => axios.get(url);
+
+const ArticleContainer = ({ limit }) => {
   const [open, setOpen] = useState(false);
   const [articles, setArticles] = useState([]);
 
-  const requestArticle = () => {
-    const url = "https://instituto-sonhar-backend.herokuapp.com/public_contents/";
-    axios.get(url).then(res => {
-      setArticles(res.data);
-    })
+  useEffect(() => {
+    fetchContent().then((res) => {
+      const data = limit ? res.data.splice(0, limit) : res.data;
 
-  }
-
-  const handleClick = () => {
-    requestArticle()
-    console.log(articles)
-    setOpen(!open)
-  }
-
+      setArticles(data);
+      setOpen(true);
+    });
+  }, [limit]);
 
   return (
-    <>
+    <PublicationsContainer>
+      <Title>ÚLTIMAS PUBLICAÇÕES</Title>
       <Collapse in={open}>
         <ArticleContainerDiv>
           <Container>
-            <Row>
+            <StyledRow>
               {articles.map((article, key) => {
                 return (
                   <Col sm={3}>
@@ -38,26 +37,23 @@ function ArticleContainer() {
                       image={article.image_url}
                       title={article.title}
                       content={article.body}
+                      id={article.id}
                       key={key}
                     ></ArticleCard>
                   </Col>
                 );
               })}
-            </Row>
+            </StyledRow>
           </Container>
         </ArticleContainerDiv>
       </Collapse>
       <SimpleContainer position="center">
-        <ButtonStyled
-          onClick={handleClick}
-          aria-controls="example-collapse-text"
-          aria-expanded={open}
-          text="Veja mais"
-        > Veja mais</ButtonStyled>
+        <ButtonStyled to="/fique-por-dentro" text="Veja mais">
+          Veja mais
+        </ButtonStyled>
       </SimpleContainer>
-    </>
+    </PublicationsContainer>
   );
-}
-
+};
 
 export default ArticleContainer;

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 
 export const CardSize = styled(Card)`
   width: 249px;
@@ -28,8 +27,14 @@ export const CardText = styled(Card.Text)`
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-
-  
 `;
 
+export const CardBody = styled(Card.Body)`
 
+ background-color:black;
+`;
+
+export const ButtonContainer = styled.div`
+display:flex;
+justify-content:flex-end;
+`

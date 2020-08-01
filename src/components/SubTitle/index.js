@@ -16,4 +16,5 @@ font: Bold 16px/24px Lato;
 letter-spacing: 0px;
 color: #7B77FC;
 opacity: 1;
+text-transform: uppercase;
 `

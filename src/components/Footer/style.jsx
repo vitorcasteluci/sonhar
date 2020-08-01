@@ -54,12 +54,19 @@ export const Divider = styled.div`
   margin: 0 auto;
 `;
 
-export const StyledLinks = styled(Link)`
+export const StyledLink = styled(Link)`
+  text-decoration: none !important;
   color: #ffffff;
   opacity: 1;
   letter-spacing: 0px;
   font-size: 16px;
   padding-top: 4%;
+  &:hover,:active{
+    color: #ffffff;
+  }
+  &.active{
+    color: #ffffff;
+  }
 `;
 
 export const RowAdress = styled(Row)`

@@ -1,10 +1,11 @@
-import React from 'react'
-import { Route, Switch } from 'react-router-dom'
-import Main from '../Containers/Main'
-import About from "../Containers/About"
-import Help from "../Containers/Help"
-import Info from "../Containers/Info"
-import Attendance from '../Containers/Attendance'
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+import Main from "../Containers/Main";
+import About from "../Containers/About";
+import Help from "../Containers/Help";
+import Info from "../Containers/Info";
+import Attendance from "../Containers/Attendance";
+import Publications from "../Containers/Publications";
 
 export const Router = () => {
   return (
@@ -24,9 +25,12 @@ export const Router = () => {
       <Route exact path="/fique-por-dentro">
         <Info />
       </Route>
+      <Route exact path="/publicacoes/:id">
+        <Publications />
+      </Route>
       <Route exact path="/Sobre">
-        <About/>
+        <About />
       </Route>
     </Switch>
-  )
-}
+  );
+};

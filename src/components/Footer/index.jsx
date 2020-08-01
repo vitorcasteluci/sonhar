@@ -8,7 +8,7 @@ import {
   ColLinks,
   Icon,
   Divider,
-  StyledLinks,
+  StyledLink,
   Adress,
   RowAdress,
   LogoSonhar,
@@ -18,10 +18,14 @@ import {
 } from "./style";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
-import { Row, Col, Container } from "react-bootstrap";
-import SonharLogo from '../../images/2Logo-Sonhar.svg'
+import { Row, Col } from "react-bootstrap";
+import SonharLogo from '../../images/2Logo-Sonhar.svg';
+import { useLocation } from 'react-router-dom';
 
 export default function Footer() {
+  const { pathname } = useLocation();
+  const currentPath = pathname.substring(1);
+
   return (
     <RodapeContainer>
       <CentralContainer>
@@ -59,19 +63,33 @@ export default function Footer() {
         <ContainerStyled fluid>
           <Row>
             <ColLinks xs={12} sm={2}>
-              <StyledLinks>O Instituto</StyledLinks>
+              <StyledLink
+                children="O Instituto"
+                to="/sobre"
+                className={(currentPath === "sobre" && "active")}
+              />
             </ColLinks>
             <ColLinks xs={12} sm={3}>
-              <StyledLinks>Atendimento</StyledLinks>
+              <StyledLink
+                children="Atendimento"
+                to="/atendimento"
+                className={(currentPath === "atendimento" && "active")}
+              />
             </ColLinks>
             <ColLinks xs={12} sm={2}>
-              <StyledLinks>Estatuto</StyledLinks>
+              <StyledLink
+                children="Estatuto"
+              />
             </ColLinks>
             <ColLinks xs={12} sm={3}>
-              <StyledLinks>Como ajudar?</StyledLinks>
+              <StyledLink
+                children="Como ajudar?"
+                to="/como-ajudar"
+                className={(currentPath === "como-ajudar" && "active")}
+              />
             </ColLinks>
             <ColLinks xs={12} sm={2}>
-              <StyledLinks>Denuncie</StyledLinks>
+              <StyledLink>Denuncie</StyledLink>
             </ColLinks>
           </Row>
         </ContainerStyled>
@@ -82,7 +100,7 @@ export default function Footer() {
           </Col>
         </RowAdress>
         <LogoSonhar>
-          <img src={SonharLogo} />
+          <img src={SonharLogo} alt="Intituto Sonhar" />
         </LogoSonhar>
         <CopyrightContainer>
           <Copyright>
