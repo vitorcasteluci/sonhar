@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Wrapper from "../../../components/Wrapper";
 import { MainTitle } from "../../../components/MainTitle";
 import { Paragraph } from "../../../components/Paragraph";
 import Button from "../../../components/Button";
@@ -9,36 +8,35 @@ import attendanceImg from "../../../assets/main-attendance.svg";
 const AttendanceData = () => {
   return (
     <MainContainer>
-      <Wrapper>
-        <Container>
-          <MainTitle text="DADOS SOBRE O ATENDIMENTO" />
-          <Paragraph text="Estamos atuando há 2 (dois) anos, mas só em novembro de 2019 conseguimos legalizar o instituto. Atendemos cerca de 203 (duzentos e três) crianças e mulheres em curso, todas de baixa renda, sendo 168 pessoas em fila de espera." />
-          <Button to="/atendimento" title="Saiba mais" text={"Saiba mais"} />
-        </Container>
-        <ImageContainer src={attendanceImg} />
-      </Wrapper>
+      <Container>
+        <MainTitle text="DADOS SOBRE O ATENDIMENTO" />
+        <Paragraph text="Estamos atuando há 2 (dois) anos, mas só em novembro de 2019 conseguimos legalizar o instituto. Atendemos cerca de 203 (duzentos e três) crianças e mulheres em curso, todas de baixa renda, sendo 168 pessoas em fila de espera." />
+        <Button to="/atendimento" title="Saiba mais" text={"Saiba mais"} />
+      </Container>
+      <ImageContainer src={attendanceImg} />
     </MainContainer>
   );
 };
 
 export default AttendanceData;
 
-const ImageContainer = styled.img`
-  width: 650px;
-  height: 314px;
-`;
-
 const MainContainer = styled.div`
-  height: 430px;
   display: flex;
-  align-itens: center;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
   justify-content: center;
   padding: 20px 82px;
   background: #f0effc 0% 0% no-repeat padding-box;
 `;
 
+const ImageContainer = styled.img`
+  flex: 1 1 435;
+  min-height: 314px;
+`;
+
 const Container = styled.div`
-  height: 100%;
-  width: 436px;
+  flex: 1 1 435;
+  min-height: 314px;
   margin: 10px 20px;
 `;
