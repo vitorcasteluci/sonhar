@@ -62,7 +62,7 @@ class Publications extends React.Component {
           <Text>{this.state.body}</Text>
         </Center>
         <Center>
-          Publicado dia <SubTitle text={this.state.publishedAt} />
+          <TextPurple>Publicado dia {this.state.publishedAt}</TextPurple>
         </Center>
         <Center>
           <Text>Escrito por: {this.state.authorName}</Text>
@@ -70,11 +70,11 @@ class Publications extends React.Component {
         <Center>
           {
           this.state.previewsId &&
-          <StyledButton text="< Anterior" to={`/publicacoes/${this.state.previewsId}`} />
+          <Button text="< Anterior" to={`/publicacoes/${this.state.previewsId}`} />
           }
           {
           this.state.nextId &&
-          <StyledButton text="Próximo >" to={`/publicacoes/${this.state.nextId}`} />
+          <Button text="Próximo >" to={`/publicacoes/${this.state.nextId}`} />
           }
         </Center>
       </MainContainer>
@@ -117,7 +117,11 @@ max-width: 1000px;
 padding: 40px;
 `
 
-const StyledButton = styled(Button)`
-padding: 20px 60px;
-border: red !important;
+const TextPurple = styled.h3`
+font-family: Lato;
+font-size: 16px;
+font-weight: regular;
+letter-spacing: 0px;
+color: #7B77FC;
+opacity: 1;
 `
