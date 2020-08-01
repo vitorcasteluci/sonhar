@@ -22,7 +22,7 @@ const ReportingChannel = () => {
         </ContainerText>
         <ImageContainer src={reportIt} />
       </Container>
-      <TopButton title="Denuncie" />
+      <TopButton title="Denuncie" href="http://www.humanizaredes.gov.br/ouvidoria-online/" />
     </MainContainer>
   )
 }
