@@ -1,10 +1,10 @@
 import React from "react";
 import styled from 'styled-components';
-
+import Publications from '../../Containers/Publications';
 
 const Info = () =>{
     return(
-        <Text>EM CONSTRUÇÃO</Text>
+        <Publications />
     );
 }
 
