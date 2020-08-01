@@ -19,15 +19,15 @@ const Objective = () => {
 export default Objective;
 
 const MainContainer = styled.div`
-height: 400px;
+height: fit-content;
 display: flex;
-align-itens: center;
+align-items: center;
 justify-content: center;
-padding: 20px 82px;
+padding: 40px;
 `
 
 const Title = styled.h1`
-height: 44px;
+padding:40px;
 font-family: Lato;
 font-weight: bold;
 font-size: 36px;
@@ -38,7 +38,6 @@ opacity: 1;
 
 const Container = styled.div`
 max-width: 744px;
-padding: 40px;
 `
 
 const Text = styled.p`
@@ -56,5 +55,4 @@ display: flex;
 flex-direction: column;
 max-width: 1156px;
 align-items: center;
-padding: 60px;
 `

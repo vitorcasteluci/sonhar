@@ -19,15 +19,13 @@ const AboutInstitute = () => {
 export default AboutInstitute;
 
 const MainContainer = styled.div`
-height: 940px;
+height: fit-content;
 display: flex;
-align-itens: center;
 justify-content: center;
-padding: 20px 82px;
 `
 
 const Title = styled.h1`
-height: 44px;
+text-align:center;
 font-family: Lato;
 font-weight: bold;
 font-size: 36px;

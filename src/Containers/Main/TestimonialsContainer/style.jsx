@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
 export const CentralContainer = styled.div`
-  width: 62%;
+  @media(min-width: 800px){
+    width: 62%;
+  }
   margin: 0 auto;
 `;
 
