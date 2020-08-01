@@ -36,10 +36,6 @@ const Text = styled.div`
       width: 30%;
     }
 
-    @media(max-width: 800px){
-
-    }
-
     position: absolute;
     font-family: Lato;
     font-weight: bold;
