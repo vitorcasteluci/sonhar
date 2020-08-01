@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Collapse from "react-bootstrap/Collapse";
 import ArticleCard from "../ArticleCard";
 import { Container, Row, Col } from "react-bootstrap";
 import SimpleContainer from "../SimpleContainer";
 import axios from "axios";
-import { ButtonStyled, ArticleContainerDiv } from './style'
+import { ButtonStyled, ArticleContainerDiv, Title } from './style'
+import styled from "styled-components"
 
 function ArticleContainer() {
   const [open, setOpen] = useState(false);
@@ -17,6 +18,8 @@ function ArticleContainer() {
     })
 
   }
+//  useEffect()
+ 
 
   const handleClick = () => {
     requestArticle()
@@ -27,7 +30,8 @@ function ArticleContainer() {
 
   return (
     <>
-      <Collapse in={open}>
+      <Title>ÚLTIMAS PUBLICAÇÕES</Title>
+      {/* <Collapse in={true}> */}
         <ArticleContainerDiv>
           <Container>
             <Row>
@@ -46,14 +50,14 @@ function ArticleContainer() {
             </Row>
           </Container>
         </ArticleContainerDiv>
-      </Collapse>
+      {/* </Collapse> */}
       <SimpleContainer position="center">
         <ButtonStyled
           onClick={handleClick}
           aria-controls="example-collapse-text"
-          aria-expanded={open}
+          aria-expanded={true}
           text="Veja mais"
-        > Veja mais</ButtonStyled>
+        >Veja mais</ButtonStyled>
       </SimpleContainer>
     </>
   );

@@ -17,10 +17,13 @@ function ArticleCard(props) {
       <Card.Body>
         <CardTitle>{props.title}</CardTitle>
         <CardText>{props.content}</CardText>
+        <ButtonContainer>
         <Button text={'Saiba mais'} position="flex-end" />
+        </ButtonContainer>
       </Card.Body>
     </CardSize>
   );
 }
 
 export default ArticleCard;
+
