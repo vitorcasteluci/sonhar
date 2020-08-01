@@ -31,18 +31,19 @@ const TopBar = () => {
         to="/fique-por-dentro"
       />
       <Search></Search>
-      <TopButton title="Doe"></TopButton>
+      <TopButton title="Doe" to="/como-ajudar"></TopButton>
     </Container>
   );
 };
 
 const Container = styled.div`
-width: 100%;
+max-width: 100%;
 height: 158px;
 display: flex;
 margin: 0;
 align-items: center;
 justify-content: center;
+overflow-x: overlay;
 `
 
 export default TopBar;
