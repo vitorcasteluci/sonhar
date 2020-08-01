@@ -5,13 +5,13 @@ export const Testimony = (props) => {
   return (
     <Container>
       <Title>{props.title}</Title>
-      <Text>{props.text}</Text>
+      <Text><span>{props.text}</span></Text>
     </Container>
   )
 }
 
 const Container = styled.div`
-width: 465px;
+overflow-x: overlay;
 height: 296px;
 display: flex;
 flex-direction: column;
@@ -27,7 +27,8 @@ letter-spacing: 0px;
 color: #7B77FC; 
 `
 
-const Text = styled.p`
+const Text = styled.div`
+width: 100%;
 font-style: italic;
 font-family: Lato;
 font-size: 16px;
