@@ -3,15 +3,15 @@ import ImageMainBanner from '../../../assets/main-banner.png';
 import styled from 'styled-components';
 
 const MainBanner = () => {
-    return (
-        <Container>
-            <ImageContainer>
-                <Text>Nosso maior objetivo está em
+  return (
+    <Container>
+      <ImageContainer>
+        <Text>Nosso maior objetivo está em
                 <TextRed> acolher e resgatar </TextRed>
                 a dignidade, a autoestima e sonhos.</Text>
-            </ImageContainer>
-        </Container>
-    )
+      </ImageContainer>
+    </Container>
+  )
 }
 
 export default MainBanner;
@@ -31,14 +31,19 @@ const ImageContainer = styled.div`
   `
 
 const Text = styled.div`
+    @media(min-width: 800px){
+      left: 139px;    
+      width: 30%;
+    }
+
+    position: absolute;
     font-family: Lato;
-    width: 30%;
     font-weight: bold;
     top: 121px;
     color: #FFFFFF;
-    left: 139px;    
+    
     font-size: 27px;
-    position: absolute;
+    
 `
 const TextRed = styled.span`
     color: #D33B3F;
