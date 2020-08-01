@@ -87,6 +87,7 @@ margin-top: 10px;
 const MainTitle = styled.h1`
 color:#7B77FC;
 font-weight:bold;
+padding: 20px;
 `
 
 const MainText = styled.h2`
@@ -111,14 +112,18 @@ const NumberTitle = styled.h1`
 color:#7B77FC;
 font-weight:bold;
 display: block;
+padding: 20px;
 `
 
 const NumberText = styled.h2`
 font-size: 16px;
 display: block;
-max-width: 42%;
+@media(min-width: 700px){
+  max-width: 42%;
+}
 margin-bottom: 15px;
 line-height: 1.5;
+padding: 20px;
 `
 
 const NumberGraph = styled.div`
