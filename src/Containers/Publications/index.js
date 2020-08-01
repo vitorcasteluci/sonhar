@@ -56,7 +56,7 @@ class Publications extends React.Component {
           <Title>{this.state.title}</Title>
         </Center>
         <Center>
-          <img src={this.state.imageUrl} alt={this.state.title} />
+          <img style={{maxWidth: "100%"}} src={this.state.imageUrl} alt={this.state.title} />
         </Center>
         <Center>
           <Text>{this.state.body}</Text>
