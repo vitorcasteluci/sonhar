@@ -41,6 +41,7 @@ const Text = styled.div`
     font-weight: bold;
     top: 121px;
     color: #FFFFFF;
+    padding: 12px;
     
     font-size: 27px;
     

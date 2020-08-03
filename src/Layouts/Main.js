@@ -2,16 +2,17 @@ import React from 'react'
 import TopBar from "../components/TopBar/TopBar"
 import "./Main.css"
 import Footer from "../components/Footer"
+import Logo from '../components/Logo'
 
-const Main = ({ children }) => {
+const Main = ({ children, width }) => {
   return (
     <div>
-      <TopBar/>
+      {width > 800 && <TopBar />}
       <div className="main-body">
         {children}
       </div>
       <div className="main-footer">
-        <Footer/>
+        <Footer />
       </div>
     </div>
   )

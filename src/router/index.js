@@ -7,6 +7,7 @@ import Info from "../Containers/Info";
 import Attendance from "../Containers/Attendance";
 import Publications from "../Containers/Publications";
 
+
 export const Router = () => {
   return (
     <Switch>
