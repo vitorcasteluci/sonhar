@@ -3,15 +3,15 @@ import TopBar from "../components/TopBar/TopBar"
 import "./Main.css"
 import Footer from "../components/Footer"
 
-const Main = ({ children }) => {
+const Main = ({ children, width }) => {
   return (
     <div>
-      <TopBar/>
+      {width > 800 ? <TopBar /> : <div style={{ height: "48px", width: "100%" }}></div>}
       <div className="main-body">
         {children}
       </div>
       <div className="main-footer">
-        <Footer/>
+        <Footer />
       </div>
     </div>
   )
