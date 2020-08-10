@@ -19,12 +19,8 @@ const Team = () => {
             <Paragraph text="Vice-presidente e Psicóloga" />
           </ParagraphContainer>
           <ParagraphContainer>
-            <ParagraphLighterName>
-              Airam Silva de Oliveira Chaves
-            </ParagraphLighterName>
-            <ParagraphLighter>
-              Secretária e diretora de projetos
-            </ParagraphLighter>
+            <ParagraphLighterName text="Airam Silva de Oliveira Chaves"/>
+            <ParagraphLighter text="Secretária e diretora de projetos"/>
           </ParagraphContainer>
           <ParagraphContainer>
             <Paragraph text="Monica da Conceição Nunes Rocha" />

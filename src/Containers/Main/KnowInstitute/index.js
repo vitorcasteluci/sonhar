@@ -12,7 +12,7 @@ const KnowInstitute = () => {
         <img style={{ maxWidth: "100%" }} alt="conheça o instituo" src={knowInstitute} />
       </ImageContainer>
       <Container>
-        <MainTitle text="CONHEÇA O INSTUTUTO É POSSIVEL SONHAR" />
+        <MainTitle text="CONHEÇA O INSTITUTO É POSSIVEL SONHAR" />
         <Paragraph text="O INSTITUTO É POSSIVÉL SONHAR é fundamentado nas diretrizes do Estatuto da Criança e do Adolescente e nos Direitos da Mulher. Nele são desenvolvidas atividades terapêuticas, psicoeducativas, de lazer e cultura para vítimas de violência (sexual, física e psíquica) em período complementar ao horário escolar." />
         <ButtonBox>
           <Button  to="/sobre" title="Saiba mais" text={"Saiba mais"} />

@@ -11,7 +11,7 @@ const ReportingChannel = () => {
       <MainContainer>
 
         <LeftContainer>
-          <MainTitle text="CANAL DE DENUNCIA" />
+          <MainTitle text="CANAL DE DENÚNCIA" />
           <ContainerText>
             <Text>O Disque Direitos Humanos, ou Disque 100, é um serviço de proteção de crianças e adolescentes com foco em violência sexual, vinculado ao Programa Nacional de Enfrentamento da Violência Sexual contra Crianças e Adolescentes, da SPDCA/SDH.</Text>
             <Text>O Disque 100 funciona diariamente das 8h às 22h, inclusive nos fins de semana e feriados. As denúncias recebidas são analisadas e encaminhadas aos órgãos de proteção, defesa e responsabilização, de acordo com a competência e as atribuições específicas, priorizando o Conselho Tutelar como porta de entrada (nas situações de crianças e adolescentes), no prazo de 24 horas, mantendo em sigilo a identidade da pessoa denunciante.</Text>
