@@ -25,7 +25,7 @@ export const Title = styled.h1`
   display: flex;
   align-self: center;
   @media (max-width: 760px) {
-    margin-left:60px;
+    margin-left: 60px;
   }
 `;
 
