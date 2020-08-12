@@ -26,7 +26,6 @@ class Publications extends React.Component {
     })
       .then((res) => res.json())
       .then((data) =>
-        // console.log(data)
         this.setState({
           title: data.content.title,
           body: data.content.body,

@@ -3,16 +3,15 @@ import { Router } from "./router";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Main from "./Layouts/Main";
 import { useLocation } from "react-router-dom";
-import { withSize } from 'react-sizeme'
-import Sidebar from './components/Sidebar'
+import { withSize } from "react-sizeme";
+import Sidebar from "./components/Sidebar";
 import "primereact/resources/themes/nova-light/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 
 const App = (props) => {
   let { pathname } = useLocation();
-  const { width } = props.size
-  console.log(width)
+  const { width } = props.size;
 
   useEffect(() => {
     const body = document.querySelector("#root");
@@ -25,7 +24,6 @@ const App = (props) => {
     );
   }, [pathname]);
 
-
   return (
     <>
       {width < 800 && <Sidebar width={width} />}
@@ -33,9 +31,8 @@ const App = (props) => {
         <Router />
       </Main>
     </>
-
   );
 };
 
-const withSizeHOC = withSize()
+const withSizeHOC = withSize();
 export default withSizeHOC(App);
