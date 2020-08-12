@@ -52,7 +52,7 @@ const ArticleContainer = ({ limit }) => {
           </Container>
         </ArticleContainerDiv>
       </Collapse>
-      {limit === 0 && (
+      {limit && (
         <SimpleContainer position="center">
           <ButtonStyled to="/fique-por-dentro" text="Veja mais">
             Veja mais
