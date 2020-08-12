@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import TopButton from '../TopButton';
-import Logo from "../Logo"
-import Search from '../Search';
-import { Link, useLocation } from 'react-router-dom';
+import React from "react";
+import styled from "styled-components";
+import TopButton from "../TopButton";
+import Logo from "../Logo";
+import Search from "../Search";
+import { Link, useLocation } from "react-router-dom";
 
 const TopBar = () => {
   const { pathname } = useLocation();
@@ -15,58 +15,58 @@ const TopBar = () => {
       <LinkStyled
         children="Principal"
         to="/"
-        className={(currentPath === "" && "active")}
+        className={currentPath === "" && "active"}
       />
       <LinkStyled
         children="O instituto"
         to="/sobre"
-        className={(currentPath === "sobre" && "active")}
+        className={currentPath === "sobre" && "active"}
       />
       <LinkStyled
         children="Atendimento"
         to="/atendimento"
-        className={(currentPath === "atendimento" && "active")}
+        className={currentPath === "atendimento" && "active"}
       />
       <LinkStyled
         children="Como ajudar?"
         to="/como-ajudar"
-        className={(currentPath === "como-ajudar" && "active")}
+        className={currentPath === "como-ajudar" && "active"}
       />
       <LinkStyled
         children="Fique por dentro"
         to="/fique-por-dentro"
-        className={(currentPath === "fique-por-dentro" && "active")}
+        className={currentPath === "fique-por-dentro" && "active"}
       />
-      <Search></Search>
+
       <TopButton title="Doe" to="/como-ajudar"></TopButton>
     </Container>
   );
 };
 
 const Container = styled.div`
-max-width: 100%;
-height: 158px;
-display: flex;
-margin: 0;
-align-items: center;
-justify-content: center;
-overflow-x: overlay;
-`
+  max-width: 100%;
+  height: 158px;
+  display: flex;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  overflow-x: overlay;
+`;
 
 const LinkStyled = styled(Link)`
-text-decoration: none !important;
-color: #000000;
-margin-right: 12px;
-margin-left: 12px;
-font-size: 16px;
-font-family: Lato, Regular;
-vertical-align: middle;
-&:hover {
-  color: #ff0040;
-}
-&.active {
-  color: #ff0040;
-}
-`
+  text-decoration: none !important;
+  color: #000000;
+  margin-right: 12px;
+  margin-left: 12px;
+  font-size: 16px;
+  font-family: Lato, Regular;
+  vertical-align: middle;
+  &:hover {
+    color: #ff0040;
+  }
+  &.active {
+    color: #ff0040;
+  }
+`;
 
 export default TopBar;

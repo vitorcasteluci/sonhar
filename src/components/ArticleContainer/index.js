@@ -4,7 +4,12 @@ import ArticleCard from "../ArticleCard";
 import { Container, Col } from "react-bootstrap";
 import SimpleContainer from "../SimpleContainer";
 import axios from "axios";
-import { PublicationsContainer ,ArticleContainerDiv, Title , StyledRow} from "./style";
+import {
+  PublicationsContainer,
+  ArticleContainerDiv,
+  Title,
+  StyledRow,
+} from "./style";
 import ButtonStyled from "../Button";
 
 const url = "https://instituto-sonhar-backend.herokuapp.com/public_contents/";
@@ -47,11 +52,13 @@ const ArticleContainer = ({ limit }) => {
           </Container>
         </ArticleContainerDiv>
       </Collapse>
-      <SimpleContainer position="center">
-        <ButtonStyled to="/fique-por-dentro" text="Veja mais">
-          Veja mais
-        </ButtonStyled>
-      </SimpleContainer>
+      {limit === 0 && (
+        <SimpleContainer position="center">
+          <ButtonStyled to="/fique-por-dentro" text="Veja mais">
+            Veja mais
+          </ButtonStyled>
+        </SimpleContainer>
+      )}
     </PublicationsContainer>
   );
 };
