@@ -78,7 +78,7 @@ const Team = () => {
             <Paragraph text="Psiquiatra" />
           </ParagraphContainer>
           <ParagraphContainer>
-            <Paragraph text="Juliana Sanches" />
+            <Paragraph text="Daniela Carla Araújo Alves Generoso" />
             <Paragraph text="Supervisora de psicologia dos estagiários" />
           </ParagraphContainer>
           <ParagraphContainer>
