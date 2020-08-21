@@ -8,51 +8,50 @@ import { responsiveOptions } from "./config";
 import { Testimonials } from "./Testimonials";
 import { CentralContainer, CarouselTitle } from "./style";
 import styled from "styled-components";
+import axios from "axios";
+
+const url =
+  "https://instituto-sonhar-backend.herokuapp.com/public_testimonies/";
+const fetchTestimonials = () => axios.get(url);
 
 const CarouselDemo = () => {
   const [testimonials, setTestimonials] = useState([]);
 
   useEffect(() => {
-    setTestimonials([
-      {
-        title:
-          "Meu nome é X, tenho 8 anos e fui abusada sexualmente pelo filho da tia que cuida de mim.",
-        text:
-          "Quando eu tinha 5 anos, ficava na casa da tia M, ela cuidava de mim enquanto meu papai e minha mamãe iam trabalhar. O filho dela de 23 anos, me chamou para assistirmos um filme enquanto ela estava ausente (não me lembro o que ela foi fazer nesse dia), esse filme tinham pessoas peladas e fazendo coisas que eu não entendia muito bem, e ele, passando a mão em minhas pernas e pedindo para que eu ficasse de calcinha e blusa, pediu que eu repetisse a moça do filme. Eu só consegui contar para a minha mamãe quando fiz 7 anos, pois fiquei com muito medo de não acreditarem em mim.",
-      },
-      {
-        title:
-          "Meu nome é X, tenho 8 anos e fui abusada sexualmente pelo filho da tia que cuida de mim.",
-        text:
-          "Quando eu tinha 5 anos, ficava na casa da tia M, ela cuidava de mim enquanto meu papai e minha mamãe iam trabalhar. O filho dela de 23 anos, me chamou para assistirmos um filme enquanto ela estava ausente (não me lembro o que ela foi fazer nesse dia), esse filme tinham pessoas peladas e fazendo coisas que eu não entendia muito bem, e ele, passando a mão em minhas pernas e pedindo para que eu ficasse de calcinha e blusa, pediu que eu repetisse a moça do filme. Eu só consegui contar para a minha mamãe quando fiz 7 anos, pois fiquei com muito medo de não acreditarem em mim.",
-      },
-      {
-        title:
-          "Meu nome é X, tenho 8 anos e fui abusada sexualmente pelo filho da tia que cuida de mim.",
-        text:
-          "Quando eu tinha 5 anos, ficava na casa da tia M, ela cuidava de mim enquanto meu papai e minha mamãe iam trabalhar. O filho dela de 23 anos, me chamou para assistirmos um filme enquanto ela estava ausente (não me lembro o que ela foi fazer nesse dia), esse filme tinham pessoas peladas e fazendo coisas que eu não entendia muito bem, e ele, passando a mão em minhas pernas e pedindo para que eu ficasse de calcinha e blusa, pediu que eu repetisse a moça do filme. Eu só consegui contar para a minha mamãe quando fiz 7 anos, pois fiquei com muito medo de não acreditarem em mim.",
-      },
-    ]);
+    fetchTestimonials().then((res) => {
+      setTestimonials(res.data);
+    });
   }, []);
 
-  const testimonialTemplate = (testimonials) => {
-    return <Testimonials title={testimonials.title} text={testimonials.text} />;
+  const testimonialTemplate = (testimonials, key) => {
+    return (
+      <Testimonials
+        key={key}
+        title={testimonials.title}
+        text={testimonials.body}
+      />
+    );
   };
   return (
     <Container>
       <CarouselTitle>DEPOIMENTOS</CarouselTitle>
       <CentralContainer className="carousel-demo">
-        <Carousel circular={true} value={testimonials} itemTemplate={testimonialTemplate} numVisible={1}
-          responsiveOptions={responsiveOptions}></Carousel>
+        <Carousel
+          circular={true}
+          value={testimonials}
+          itemTemplate={testimonialTemplate}
+          numVisible={1}
+          responsiveOptions={responsiveOptions}
+        ></Carousel>
       </CentralContainer>
     </Container>
   );
 };
 
 const Container = styled.div`
-padding: 80px 0;
-width: 100%;
-max-width: 1356px;
-`
+  padding: 80px 0;
+  width: 100%;
+  max-width: 1356px;
+`;
 
 export default CarouselDemo;
