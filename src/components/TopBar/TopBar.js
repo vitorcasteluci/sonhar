@@ -37,6 +37,11 @@ const TopBar = () => {
         to="/fique-por-dentro"
         className={currentPath === "fique-por-dentro" && "active"}
       />
+      <LinkStyled
+        children="Rádio Sonhar"
+        to="/radio"
+        className={currentPath === "fique-por-dentro" && "active"}
+      />
 
       <TopButton title="Doe" to="/como-ajudar"></TopButton>
     </Container>

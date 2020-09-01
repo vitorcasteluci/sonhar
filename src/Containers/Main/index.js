@@ -5,6 +5,7 @@ import AttendanceData from "./AttendanceData";
 import ReportingChannel from "./ReportingChannel";
 import TestimonialsContainer from "./TestimonialsContainer";
 import ArticleContainer from "../../components/ArticleContainer";
+import Radio from "../../components/Radio";
 
 const Main = () => {
   return (
@@ -15,6 +16,7 @@ const Main = () => {
       <TestimonialsContainer />
       <ReportingChannel />
       <ArticleContainer limit={4} />
+      <Radio />
     </>
   );
 };

@@ -12,7 +12,6 @@ export const festaNatalPhotos = [
   { photo: "festa-natal-criancas-2019/img_03.jpg" },
   { photo: "festa-natal-criancas-2019/img_04.jpg" },
   { photo: "festa-natal-criancas-2019/img_05.jpg" },
-
 ];
 
 export const jantarBeneficientePhotos = [
@@ -21,7 +20,6 @@ export const jantarBeneficientePhotos = [
   { photo: "jantar-beneficiente-2019/img_03.jpg" },
   { photo: "jantar-beneficiente-2019/img_04.jpg" },
   { photo: "jantar-beneficiente-2019/img_05.jpg" },
-
 ];
 
 export const reforcoEscolarPhotos = [
@@ -30,9 +28,6 @@ export const reforcoEscolarPhotos = [
 ];
 
 export const treinamentoProfissionalPhotos = [
-  { photo: "treinamento-profissional/img_01.jpg" },
   { photo: "treinamento-profissional/img_02.jpg" },
   { photo: "treinamento-profissional/img_03.jpg" },
-  { photo: "treinamento-profissional/img_04.jpg" },
-
 ];

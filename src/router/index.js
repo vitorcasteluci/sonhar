@@ -6,7 +6,7 @@ import Help from "../Containers/Help";
 import Info from "../Containers/Info";
 import Attendance from "../Containers/Attendance";
 import Publications from "../Containers/Publications";
-
+import Radio from "../components/Radio";
 
 export const Router = () => {
   return (
@@ -31,6 +31,9 @@ export const Router = () => {
       </Route>
       <Route exact path="/Sobre">
         <About />
+      </Route>
+      <Route exact path="/radio">
+        <Radio />
       </Route>
     </Switch>
   );
