@@ -1,13 +1,17 @@
+/* eslint-disable no-undef */
 import React from "react";
 import styled from "styled-components";
 import TopButton from "../TopButton";
 import Logo from "../Logo";
 import Search from "../Search";
 import { Link, useLocation } from "react-router-dom";
+import ButtonPDF from'../ButtonPdf/ButtonPDF';
+import { useEffect } from "react";
 
 const TopBar = () => {
   const { pathname } = useLocation();
   const currentPath = pathname.substring(1);
+  
 
   return (
     <Container>
@@ -44,7 +48,14 @@ const TopBar = () => {
       />
 
       <TopButton title="Doe" to="/como-ajudar"></TopButton>
+   
+      <ButtonPDF title="Doações" href="Transparência-ÉPossívelSonhar.pdf" > </ButtonPDF>
+       
+       
+      
+      
     </Container>
+   
   );
 };
 
